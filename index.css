@@ -1,0 +1,75 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+.faixa {
+    background-color: silver;
+    display: flex;
+    height: 50px;
+}
+.buscar {
+    display: flex;
+    background-color:#E1E1E1;
+    border:solid 0px;
+    border-radius:7px;
+    width:350px;
+    margin-left: 20px;
+}
+.barraBusca {
+    display: flex;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+}
+.lista {
+    display: flex;
+    width: 20vw;
+    float: left;
+    margin-left: 10px;
+}
+.filtro {
+    width: 100%; 
+}
+.filtro button {
+    top: 3vh;
+    margin-top: 20px;
+    font-family: sans-serif;
+    display: block;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	border-radius: 10px;
+	width: 100%;
+	text-align: center;
+    border: 0px;
+    font-weight: bold;    
+    cursor: pointer;
+    font-style: italic;
+    color: rgb(39, 35, 35);
+}
+.imagens {
+    display: flex;
+    
+}
+.imgHome {
+    display: flex;
+    flex-wrap: wrap;
+    width: 77vw;
+}
+.imgHome img {
+    padding: 50px;
+    width: 20vw;
+}
