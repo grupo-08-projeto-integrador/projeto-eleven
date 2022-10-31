@@ -44,6 +44,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin:100px ;
 }
 #box1{
     display: flex;    
@@ -96,38 +97,41 @@
 }
 .insta{
     display: flex;
+    padding: 15px;
     width: 100%;
     max-width:49px;
     max-height:49px;
     min-height:49px; 
     min-width:49px;
-    border-radius: 20px;
-    align-self:baseline;
+    border-radius: 35px;
 }
 .loc{
     display: flex;
+    padding: 15px;
     width: 100%;
     max-width:49px;
     max-height:49px;
     min-height:49px; 
     min-width:49px;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 .email{
     display: flex;
+    padding: 15px;
     width: 100%;
     max-width:49px;
     max-height:49px;
     min-height:49px; 
     min-width:49px;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 .zap{
     display: flex;
+    padding: 15px;
     width: 100%;
     max-width:49px;
     max-height:49px;
     min-height:49px; 
     min-width:49px;
-    border-radius: 20px;
+    border-radius: 35px;
 }
