@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title></title>
     <link rel="stylesheet" href="./index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <section class="home"><!--PRIMEIRA PÁGINA-->
@@ -13,16 +14,27 @@
     <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
         <div class="faixa"></div>
         <div class="topbar">
-            <div class="voltar"><button><img src="LeftVoltar.png"></button></div>
+            <div class="voltar"><button class="imgvoltar"></button><img src="LeftVoltar.png"></button>
+            </div>
             <div class="ELEVEN"><button><h1>ELEVEN</h1></button></div>
-            <div class="carrinho"><button><img src="shoppingCarrinho.png"></button></div>
+            <div class="carrinho"><button class="imgcar"><img src="shoppingCarrinho.png"></button></div>
         </div>
         <div class="SearchBox">
                 <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
+        </div>
+        <div class="PRODUTO">
+            <img class='camisa'src="camisetas\camiseta.JPG">
+            <div class="descriçaoProduto"><h2>Camiseta HUGO BOSS</h2>
+            <h3 class="h3price">R$ 460,00</h3>
+
+            <h4 class="h4quant">Quantidade<button onclick="contador()" class="mais">+</button>           <button onclick="contador()" class="menos">-</button></h4>
+
+            <button class="AddCar"><h2>Adicionar ao Carrinho</h2></button>
             </div>
         </div>
 
     </section>
+
     <section class="carrinho"><!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
 
     </section>

@@ -1,4 +1,4 @@
-vbody {
+body{
     background-color: white;
     font-family: 'Inter';
     margin: 0px;
@@ -22,9 +22,6 @@ vbody {
 .ELEVEN{
     font-weight: bold;
     font-size: 18px;
-    padding: 10px;
-    height: auto;
-    width: auto;
 }
 .voltar{
     display: flex;
@@ -36,9 +33,8 @@ vbody {
 }
 .carrinho{
     display: flex;
-    align-self: center;
-    height: 40px;
-    width: 40px;
+    min-height: 60px;
+    min-width: 60px;
     border: none;
     background-color: none;
 }
@@ -58,10 +54,65 @@ vbody {
 input[type="text"]{
     border:none;
     background-color: transparent;
+    padding-right: 45%;
 }
 button{
     width: auto;
     height: auto;
     border: none;
     background-color: transparent;
+}
+.PRODUTO{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+.camisa{
+    border-radius: 8%;
+    max-width: 35%;
+    max-height: 35%;
+}
+.descriçaoProduto{
+    display: flex;
+    font-size: 140%;
+    font-style: "Inter";
+    align-items: flex-start;
+    flex-direction: column;
+}
+.imgcar{
+    height: 70px;
+    width: 70px;
+}
+.imgvoltar{
+    height: 70px;
+    width: 70px;
+}
+.descriçaoProduto .AddCar{
+    color: black;
+    background-color: gray;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+}
+.descriçaoProduto .h3price{
+    color: bold;
+    background-color: transparent
+}
+.descriçaoProduto .h4quant{
+    padding: 5px;
+}
+.descriçaoProduto .mais{
+    color: red;
+    background-color: transparent;
+    border:solid 1px;
+}
+.descriçaoProduto .menos{
+    color: red;
+    background-color: transparent;
+    border: solid 1px;
 }
