@@ -14,24 +14,51 @@
     <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
         <div class="faixa"></div>
         <div class="topbar">
-            <div class="voltar"><button class="imgvoltar"></button><img src="LeftVoltar.png"></button>
-            </div>
-            <div class="ELEVEN"><button><h1>ELEVEN</h1></button></div>
-            <div class="carrinho"><button class="imgcar"><img src="shoppingCarrinho.png"></button></div>
+
+            <div class="voltar"><button class="botaovoltar"><img class="pngvoltar" src="LeftVoltar.png"></button></div>
+
+            <div class="ELEVEN"><button class="botaoEleven"><h1>ELEVEN</h1></button></div>
+
+            <div class="carrinho"><button class="botaocar"><img class="pngcar" src="shoppingCarrinho.png"></button></div>
+
         </div>
         <div class="SearchBox">
                 <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
         </div>
+
         <div class="PRODUTO">
-            <img class='camisa'src="camisetas\camiseta.JPG">
-            <div class="descriçaoProduto"><h2>Camiseta HUGO BOSS</h2>
-            <h3 class="h3price">R$ 460,00</h3>
-
-            <h4 class="h4quant">Quantidade<button onclick="contador()" class="mais">+</button>           <button onclick="contador()" class="menos">-</button></h4>
-
-            <button class="AddCar"><h2>Adicionar ao Carrinho</h2></button>
+            <img class='imgproduto' src="camisetas\camiseta.JPG">
+            <div class="nomeprod">
+                <h2>T-Shirt HUGO BOSS</h2>
+            </div>
+            <div class="preçoprod">
+                <h3>R&#36; 460,00</h3>
             </div>
         </div>
+
+        <div class="containerquantidade">
+            <h2>Quantidade</h2>
+            <button id="buttonDecrement">-</button>
+            <input type="text" value="0" disabled id="counterValue">
+            <button id="buttonIncrement">+</button>
+        </div>
+
+        <script>
+        const counter= document.querySelector('#counterValue');
+        const buttonDecrement = document.querySelector('#buttonDecrement');
+        const buttonIncrement = document.querySelector('#buttonIncrement');
+
+        let  value = counter.value;
+
+        buttonIncrement.addEventListener('click',() => {
+        value = ++value;
+        counter.value = value;
+        });
+        buttonDecrement.addEventListener('click', () => {
+        value = value !== 0 ? --value : 0;
+        counter.value = value;
+        });
+        </script>
 
     </section>
 
