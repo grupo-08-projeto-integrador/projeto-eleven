@@ -1,3 +1,55 @@
+@media (min-width: 391px) 
+{
+    .botaoCompra2
+    {   
+        height: 20px;
+        width: 20px;
+        display: none;
+    }
+}
+
+@media (max-width: 391px) 
+{
+    .faixa {
+        height: 20px;
+    }
+    .produtos
+    {
+        width: 35vw;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .prod {
+        width: 40vw;
+    }
+
+    .lista {
+        display: none;
+    }
+    
+    .filtro {
+        display: none;
+    }
+
+    .imgHome {
+        gap: 50px;
+        width: 100vw;
+    }
+
+    .buscar {
+    }
+
+    .botaoCompra{
+        display: none;
+    }
+
+    .botaoCompra2{
+        background-color: rgba(190, 203, 104, 0.855);
+        justify-content: center;
+    }
+
+}
 
 body {
     margin: 0px;
@@ -6,10 +58,19 @@ body {
 h1 {
     display: flex;
     font-size: 60px;
-    justify-content: center;
     font-family: sans-serif;
     font-weight: 1000;
+    justify-content: center;
+    margin-block-start: 0.40em;
+    margin-block-end: 0;
 }
+
+h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
 .faixa {
     background-color: silver;
     display: flex;
@@ -20,7 +81,7 @@ h1 {
     background-color:#E1E1E1;
     border:solid 0px;
     border-radius:7px;
-    width:350px;
+    width: 300px;
     margin-left: 20px;
 }
 .barraBusca {
@@ -69,18 +130,18 @@ button::before {
 button {
     transition: all 0.3s;
     top: 3vh;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: sans-serif;
     display: block;
-	padding: 20px;
-	text-decoration: none;
-	font-size: 18px;
-	position: relative;
-	border-radius: 10px;
-	width: 100%;
-	text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
     border: 0px;
-    font-weight: bold;    
+    font-weight: bold;
     cursor: pointer;
     font-style: italic;
     color: rgb(39, 35, 35);
@@ -109,16 +170,22 @@ button:hover::after {
 	transform: scale(0.1, 1);
 }
 
+.produtos {
+    flex-grow: 1;
+    min-width: 50%; 
+}
 .imagens {
     display: flex;
     overflow: hidden;
-    
+    padding-top: 20px;
 }
 .imgHome {
     display: flex;
     flex-wrap: wrap;
-    width: 77vw;
+    width: 100vw;
 }
+
+
 img {
     padding: 50px;
     width: 20vw;
@@ -133,8 +200,11 @@ img:hover {
 }
 .info {
     text-align: center;
-    
+    text-decoration: none;
+
 }
+
+
 .botaoCompra {
     position: relative;
     color: silver;
@@ -167,3 +237,4 @@ img:hover {
   .botaoCompra:hover::before{
     width: 100%;
   }
+
