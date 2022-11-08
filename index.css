@@ -1,7 +1,10 @@
 body{ 
-    margin: 0px;
+    max-width: 360px;
+    max-height: 480px;
+    margin: auto;
     padding: 0px;
     background-color: #ffffff;
+    
 }
 
 .titu{
@@ -42,26 +45,20 @@ body{
 }
 .boximg{
   display: flex;
-  width: 350px;
-  height: 300px;
-}
-.scrol{
-    flex: 0 0 100%;
-    padding: 30px;
-    scroll-snap-align: start;
-    border-radius: 50px;
-   
+  width: 360px;
+  height: 210px;
 }
 .fundoloja{
-    width: 500px;
-    height: 300px;
+    width: 360px;
+    height: 210px;
 }
 .boxes{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    margin:100px ;
+    align-items: center;
+    margin:37px ;
 }
 #box1{
     display: flex;    
@@ -70,7 +67,7 @@ body{
     font-family: 'Inter';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 900;
-    width: 400px;
+    width: 340px;
     height: 66px;
     border-radius: 31px;
     background-color: #E1E8EF;
@@ -83,7 +80,7 @@ body{
     font-family: 'Inter';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 900;
-    width: 400px;
+    width: 340px;
     height: 66px;
     border-radius: 31px;
     background-color: #E1E8EF;
@@ -95,7 +92,7 @@ body{
     font-family: 'Inter';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 900;
-    width: 400px;
+    width: 340px;
     height: 60px;
     border-radius: 31px;
     background-color: #E1E8EF;
@@ -107,7 +104,7 @@ body{
     font-family: 'Inter';
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 900;   
-    width: 400px;
+    width: 340px;
     height: 60px;
     border-radius: 31px;
     background-color: #E1E8EF;
