@@ -233,15 +233,12 @@ body{
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;
     }
-    .back2{
+    #titulo2{
         display: flex;
         align-items: center;
-        width: 100%;
-        height: 27px;
-        background: #B1AFAF;
+        margin-top: 19px;
         justify-content: center;
-        font-size: 18px;
-        margin: 0px;
+        font-size: 28px;
         font-family: 'Inter';
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;   
@@ -250,6 +247,8 @@ body{
         display: flex;
         width: 760px;
         height: 400px;
+        box-sizing: border-box;
+        box-shadow: 20px #B1AFAF;
       }
       .slider{
         width: 100%;
@@ -275,6 +274,8 @@ body{
     }
     #ulimg{
         margin: 0px;
+        box-sizing: border-box;
+        box-shadow: 15px #757575;
     }
     @keyframes cambio{
         0% {margin-left:0;}
