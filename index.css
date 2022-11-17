@@ -1,12 +1,12 @@
 
-@media (max-width:390px){
+@media screen (max-width:390px){
 body{ 
     max-width: 390px;
     max-height: 480px;
     margin: auto;
     padding: 0px;
     background-color: #ffffff;
-    
+    justify-content: center;
 }
 
 .titu{
@@ -54,10 +54,42 @@ body{
     width: 390px;
     height: 210px;
 }
-.fundoloja:hover{
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 11s infinite alternate linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 390px;
+    height: 400px;
+}
+#ulimg{
+    margin: 0px;
+    box-sizing: border-box;
+    box-shadow: 15px #757575;
+}
+@keyframes cambio{
+    0% {margin-left:0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
 .boxes{
     display: flex;
@@ -161,6 +193,7 @@ body{
     -ms-zoom-animation: unset;
     
 }
+
 .insta{
     display: flex;
     padding: 15px;
@@ -209,6 +242,7 @@ body{
         margin: 0px;
         padding: 0px;
         background-color: #ffffff;
+        justify-content: center;
     }
     .back{
         display: flex;
@@ -290,6 +324,7 @@ body{
     .fundoloja{
         width: 760px;
         height: 400px;
+        justify-content: center;
     }
     .boxes{
         display: flex;
