@@ -1,17 +1,16 @@
 
-@media (max-width: 428px) 
+@media (max-width: 391px) 
 {
     
     .produtos
     {
-        width: 177px;
-        height: 213px;
+        width: 120px;
+        height: 173px;
         border-radius: 32px;
-        padding: 20px;
     }
 
     .prod {
-        
+
         width: 177px;
         height: 213px;
         /* padding: 20px; */
@@ -25,9 +24,13 @@
         display: none;
     }
 
+    .buscar {
+        justify-content: center;
+    }
+
     .imgHome {
-        gap: 50px;
         width: 100vw;
+        gap: 0px;
     }
 
     .botaoCompra{
@@ -35,6 +38,11 @@
     }
 
 }
+
+@media (max-width: 760px){
+
+}
+
 
 body {
     margin: 0px;
@@ -159,9 +167,11 @@ button:hover::after {
 }
 
 .produtos {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     min-width: 50%; 
+    border-radius: 16px;
 }
+
 .imagens {
     display: flex;
     overflow: hidden;
@@ -171,11 +181,12 @@ button:hover::after {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+    justify-content: center;
+    gap: 40px;
 }
 
 
 img {
-    padding: 50px;
     width: 20vw;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
