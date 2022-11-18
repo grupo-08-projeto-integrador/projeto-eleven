@@ -450,7 +450,7 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
     }
 
     #boxtx1 {
@@ -483,7 +483,7 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
     }
 
     #box2:hover {
@@ -507,7 +507,7 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
     }
 
     #box3:hover {
@@ -530,7 +530,7 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
     }
 
     #box4:hover {
