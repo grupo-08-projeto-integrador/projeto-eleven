@@ -16,6 +16,7 @@
         width: 120px;
         height: 173px;
         padding: 0px;
+        /* bottom: 20px; */
     }
 
     .lista {
@@ -70,10 +71,10 @@ h3 {
 }
 
 
-.faixa {
+header {
     background-color: silver;
     display: flex;
-    height: 50px;
+    height: 5vh;
 }
 .buscar {
     display: flex;
@@ -204,39 +205,33 @@ img:hover {
     text-align: center;
     text-decoration: none;
 
+    
+
 }
 
-
-.botaoCompra {
-    position: relative;
-    color: silver;
-    font-size: 14px;
-    font-family: "montserrat";
-    text-decoration: none;
-    margin: 30px 0;
-    border: 0px solid;
-    padding: 14px 60px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 1s all ease;
+.botaoCOMPRA {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
 }
-.botaoCompra::before {
-    background: black;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    transition: all 0.6s ease;
-  }
-  
-  .botaoCompra::before {
-    width: 0%;
-    height: 100%;
-  }
-  
-  .botaoCompra:hover::before{
-    width: 100%;
-  }
+.botaoCOMPRA:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.botaoCOMPRA:active {
+	position:relative;
+	top:1px;
+}
+
 
