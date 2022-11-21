@@ -1,11 +1,15 @@
 @media (max-width:390px) {
+    .Desktop{
+        display: none;
+    }
     body {
         max-width: 390px;
         max-height: 480px;
         margin: auto;
-        padding: 0px;
+        padding: 00px;
         background-color: #ffffff;
         justify-content: center;
+        align-items: center;
     }
 
     .titu {
@@ -292,6 +296,10 @@
 }
 
 @media (min-width:391px) and (max-width:760px) {
+    .Desktop{
+        display: none;
+    }
+
     body {
         max-width: 760px;
         max-height: auto;
@@ -299,6 +307,7 @@
         padding: 0px;
         background-color: #ffffff;
         justify-content: center;
+        align-items: center;
     }
 
     .back {
@@ -378,19 +387,19 @@
         }
 
         25% {
-            margin-left: -760px;
+            margin-left: -100%;
         }
 
         45% {
-            margin-left: -760px;
+            margin-left: -100%;
         }
 
         50% {
-            margin-left: -1520px;
+            margin-left: -200%;
         }
 
         70% {
-            margin-left: -1520px;
+            margin-left: -200%;
         }
 
         75% {
@@ -588,8 +597,10 @@
         margin: 0px;
         padding: 0px;
         background-color: #ffffff;
+        align-items: center ;
     }
-    .desktop{
+    .Desktop{
+        align-items: center;
         margin: 0;
         padding: 0;
     }
@@ -597,6 +608,127 @@
         width: auto;
         height: 26px; 
         background: #312E2E;
+    }
+    [role=navigation]{
+        display: flex;
+        flex-direction:row-reverse;
+        
+    }
+    #menuToggle{
+      margin-right: 20px;
+      float: inherit;
+      display:block;
+      position:relative;
+      top:2px;
+      left:15px;
+      z-index:1;
+      -webkit-user-select:none;
+      user-select:none;
+      }
+  
+      #menuToggle input{
+      display:block;
+      width:40px;
+      height:32px;
+      position:absolute;
+      top:-7px;
+      left: -5px;
+      cursor:pointer;
+      opacity: 0; /*hide this */
+      z-index: 2; /* and place it over the hamburguer*/
+      -webkit-touch-callout:none;
+      }
+  
+      #menuToggle span{
+      display:block;
+      width:33px;
+      height:4px;
+      margin-bottom:5px;
+      position:relative;
+      background:#131212;
+      border-radius:3px;
+      z-index:1;
+      transform-origin:4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+      }
+  
+      #menuToggle span:first-child{
+      transform-origin:0% 0%;
+      }
+  
+      #menuToggle span:nth-last-child(2){
+      transform-origin:0% 100%;
+      }
+  
+      #menuToggle input:checked ~ span{
+      opacity:1;
+      transform:rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+      }
+  
+      #menuToggle input:checked ~ span:nth-last-child(3){
+      opacity:0;
+      transform:rotate(0deg) scale(0.2, 0.2);
+      }
+  
+      #menuToggle input:checked ~ span:nth-last-child(2){
+      transform:rotate(-45deg) translate(0, -1px);
+      }
+  
+      #menu{
+      position:absolute;
+      width:100px;
+      padding:70px;
+      margin: -100px 0 0 -60px;
+      padding-top:125px;
+      background:#C9C2C2;
+      list-style-type:none;
+      -webkit-font-smoothing:antialiased;
+      transform-origin: 0% 0%;
+      transform:translate(-100%, 0);
+      transition:transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      }
+      #menu a{
+        text-decoration: none;
+      }
+      #menu li{
+      padding:10px 0;
+      font-size:22px;
+      list-style: none;
+      text-decoration: none;
+      color: #131212;
+      }
+  
+      #menuToggle input:checked ~ ul{
+      transform: none;
+      }
+    .bordamenu{
+        width: auto;
+        height: 30px;
+        background: #C9C2C2;
+        display: flex;
+        flex-direction: row;
+    }
+    #menuele{
+        font-weight: 1000;
+        font-family: 'Inter';
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;       
+        color: #000000;
+    }
+    #linhamenu{
+        display: flex;
+        justify-content: center;
+        width: 4px;
+        position: relative;
+        top: 3px;
+        height: 20px;
+        border-right: 3px solid #000000;
     }
     .titulod{
         display: flex;
@@ -607,15 +739,15 @@
         line-height: 96px;
         font-family: 'Inter';
     }
-    #elevD{
+    h1 {
         display: flex;
+        width: 100%;
         justify-content: center;
-        font-family: 'Inter';
-        font-weight: 900;
-        line-height: 96px;
-        font-size: 30px;
-        color: #000000;
-        margin-bottom: -15px;
+        font-size: 60px;
+        font-family: sans-serif;
+        font-weight: 1000;
+        margin-block-start: 0.40em;
+        margin-block-end: 0;
     }
     #linha{
         display: flex;
@@ -659,12 +791,15 @@
         margin-bottom: 100px;
     }
     .fundolojaD{
-        width: 484px;
-        height: 281px;
+        width: 509px;
+        height: 320px;
         border-radius: 25px;
     }
     .boxesD{
 
+    }
+    #boxtxD{
+        text-decoration: none;
     }
     #box1 {
         border: none;
@@ -677,7 +812,8 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
+        background: #312E2E;
+        color: #ffffff;
     }
 
     #box1:hover {
@@ -701,8 +837,9 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box2:hover {
         -moz-transform: scale(1.1);
@@ -725,8 +862,9 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box3:hover {
         -moz-transform: scale(1.1);
@@ -748,8 +886,9 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box4:hover {
         -moz-transform: scale(1.1);
