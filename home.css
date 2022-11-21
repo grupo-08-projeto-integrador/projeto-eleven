@@ -58,6 +58,54 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.carrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    width: 100%;
+    max-width: 1200px;
+    height: 60vh;
+    overflow: hidden;
+    max-width: 1200px;
+
+}
+
+.carrossel ul {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    animation: canva 7s ease infinite;
+}
+
+@keyframes canva {
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -2600px;
+    }
+    45%{
+        margin-left: -2600px;
+    }
+    50%{
+        margin-left: -2600px;
+    }
+    70%{
+        margin-left: 0;
+    }
+    75%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
 
 h1 {
     display: flex;
@@ -70,7 +118,7 @@ h1 {
     margin-block-end: 0;
 }
 
-#linha-horizontal {
+.linha-horizontal {
     width: 300px;
     border: 1px solid #000;
 }
@@ -99,21 +147,41 @@ h3 {
     padding: 8vh;
 }
 
+.carrossel li{
+    width: 100%;
+    list-style: none;
+}
+
+#ulimg {
+    margin: 0;
+    display: flex;
+}
 .banner {
-    width: 40vw;
+    width: 60vw;
+    height: 40vh;
     padding: 3vh;
+    position: relative;
+    margin-left: 30vw;
+    padding-right: 40vw;
+}
+
+.banner2{ 
+    width: 60vw;
+    height: 40vh;
+    padding: 3vh;
+    
 }
 
 .buscar{
     position: absolute;
-    top: 65vh;
+    top: 90vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color: silver;
     height: 40px;
     border-radius: 40px;
     padding: 10px;
-    top: 550px; 
+    
 }
 
 .buscar:hover > .barraBusca {
