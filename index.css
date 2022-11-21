@@ -1,5 +1,7 @@
 @media (max-width:390px) {
     .Desktop{
+        margin: 0;
+        padding: 0;
         display: none;
     }
     body {
@@ -297,6 +299,8 @@
 
 @media (min-width:391px) and (max-width:760px) {
     .Desktop{
+        margin: 0;
+        padding: 0;
         display: none;
     }
 
@@ -585,7 +589,7 @@
 
 }
 
-@media (min-width:1200px){
+@media (min-width:760px){
     .mobiletable{
         margin: 0;
         padding: 0;
