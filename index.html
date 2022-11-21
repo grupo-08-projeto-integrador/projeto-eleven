@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <section class="home"><!--PRIMEIRA PÁGINA-->
@@ -12,23 +11,27 @@
     </section>
     
     <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
-        <div class="faixa"></div>
-        <div class="topbar">
+        <div id="faixa1"></div>
+        <div id="faixa2">
+            
+        </div>
+        <div id="topbar">
 
-            <div class="voltar"><button class="botaovoltar"><img class="pngvoltar" src="LeftVoltar.png"></button></div>
+            <div id="divVoltar"><button class="botao"><img id="pngtop" src="imagens/LeftVoltar.png"></button></div>
 
-            <div class="ELEVEN"><button class="botaoEleven"><h1>ELEVEN</h1></button></div>
+            <div id="divELEVEN"><h1 id="h1ELEVEN">ELEVEN</h1></div>
 
-            <div class="carrinho"><button class="botaocar"><img class="pngcar" src="shoppingCarrinho.png"></button></div>
+            <div id="divCarrinho"><button class="botao"><img id="pngtop" src="imagens/shoppingCarrinho.png"></button></div>
 
         </div>
-        <div class="SearchBox">
-                <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
-        </div>
+        <div id="line2"></div>
+                <div id="divsearch">
+                    <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
+                </div>
 
         <div class="PRODUTO">
-            <img class='imgproduto' src="camisetas\camiseta.JPG">
-            <div class="nomeprod">
+            <img id='imgproduto' src="                      ">
+            <div class="textprod">
                 <h2>T-Shirt HUGO BOSS</h2>
             </div>
             <div class="preçoprod">
@@ -39,26 +42,11 @@
         <div class="containerquantidade">
             <h2>Quantidade</h2>
             <button id="buttonDecrement">-</button>
-            <input type="text" value="0" disabled id="counterValue">
+            <input type="text" value="1" disabled id="counterValue">
             <button id="buttonIncrement">+</button>
         </div>
 
-        <script>
-        const counter= document.querySelector('#counterValue');
-        const buttonDecrement = document.querySelector('#buttonDecrement');
-        const buttonIncrement = document.querySelector('#buttonIncrement');
-
-        let  value = counter.value;
-
-        buttonIncrement.addEventListener('click',() => {
-        value = ++value;
-        counter.value = value;
-        });
-        buttonDecrement.addEventListener('click', () => {
-        value = value !== 0 ? --value : 0;
-        counter.value = value;
-        });
-        </script>
+        <script src="index.js"></script>
 
     </section>
 
