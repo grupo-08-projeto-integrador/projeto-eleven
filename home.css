@@ -1,7 +1,11 @@
 @media (max-width: 391px) {
-    .banner {
-        width: 100vw;
-        padding: 3vh;
+    
+
+    .carrossel{
+        display: none;
+    }
+    .buscar1{
+        display: none;
     }
 
     .produtos {
