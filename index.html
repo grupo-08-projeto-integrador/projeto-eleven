@@ -12,32 +12,38 @@
     <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
 
     </section>
-    <section class="carrinho"><!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
-        <div class="faixa"></div>
-        <div class="top">
-            <img src="./Left.png" alt="back">
-            <div><h1>ELEVEN</h1></div>
-            <img src="./shopping.png" alt="cart">
+
+    <section class="checkout"><!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
+        <div class="faixa-checkout"></div>
+        <div class="top-checkout">
+            <button id="btnleft-checkout"><img src="./Left.png" alt="back"></button>
+            <div><h1 id="eleven-checkout">ELEVEN</h1></div>
+            <button id="btncart-checkout"><img src="./shopping.png" alt="cart"></button>
         </div>
-        <div class="faixa2">
-            <h2 id="carrinho">CARRINHO</h2>
+        <div class="faixa2-checkout">
+            <h2 id="carrinho-checkout">CARRINHO</h2>
         </div>
-        <div class="itens">
-            <div class="item1">
+        <div class="itens-checkout">
+            <div class="item1-checkout">
                 <div class="check tam1"><input type="checkbox"></div>
-                <div class="produto tam3">
-                    <p id="protudo">T-Shirt Armani</p>
-                    <p id="valor">R$ 450,00</p>
+                <div class="item-valor-checkout tam3">
+                    <p id="produto-checkout">T-Shirt Armani</p>
+                    <p id="valor-checkout">Subtotal: R$ 450,00</p>
                 </div>
-                <div class="qtde tam1">
-                    <p>-</p>
-                    <p>Qt: 1</p>
-                    <p>+</p>
+                <div class="qtde-checkout tam1">
+                    <buttom id="btnmenos-checkout">-</buttom>
+                    <p id="qtdeitens-checkout">Qt: 1</p>
+                    <buttom id="btnmais-checkout">+</buttom>
                 </div>
-                <div class="remover tam1"><img src="./clear.png" alt="clear"></div>
+                <button class="remover-checkout tam1"><img src="./clear.png" alt="clear"></button>
             </div>
         </div>
+        <div class="precototal-checkout">
+            <div id="tpt-checkout"><p>TOTAL: R$ 450,00</p></div>
+        </div>
+        <div class="divbtnpf-checkout"><button class="btnFP-checkout">FINALIZAR PEDIDO</button></div>
     </section>
+
     <section class="register"><!--PÁGINA DE REGISTRO-->
 
     </section>
