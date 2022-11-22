@@ -46,12 +46,32 @@ body {
     border: 1px solid #000;
 }
 
-.imagens_marcas{
-    padding: 0px;
+.banner{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    width: auto;
+    height: 200px;
+    margin-bottom: 96px;
 }
+.ArmaniEx{
+    width: 150px;
+}
+.GiorgioA{
+    width: 300px;
+}
+.EmporioD{
+    width: 600px;
+}
+.GivenchyD{
+    width: 300px;
+}
+.HugoD{
+    width: 300px;
+}
+
 /*Carrossel*/
 .slider {  
     margin: 0 auto;
@@ -106,15 +126,23 @@ body {
 /*Fim Carrossel*/
 
 input[type="text"]{
-    width: 10em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    text-align: end;  
+    width: 12em;
     height: 2em;
-    background: silver;
+    background: #e9e9e9;
     border-radius:12px;
     border: none;
     padding: 0px 10px;
     font-size: 1em;
     color: #5E6272;
     margin-left: 5vw;
+    background-image: url(./icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 9% 40%;
 }
 
 #icon {
@@ -128,7 +156,6 @@ h3 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-
 
 .imagens {
     display: flex;
@@ -145,18 +172,8 @@ h3 {
     row-gap: 100px;
 }
 
-
-img {
+.imgHome img {
     width: 15vw;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-img:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 .produtos{
@@ -166,15 +183,16 @@ img:hover {
     text-align: center;
     text-decoration: none;
     padding-top: 1vh;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
+    font-style: light;
+    font-weight: 100;
     font-size: 14px;
     line-height: 24px;
     color: #5E6272;
+    gap: 5px;
 }
 
 
