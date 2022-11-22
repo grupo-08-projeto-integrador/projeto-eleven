@@ -1,60 +1,27 @@
-@media (max-width: 391px) {
-    
-
-    .carrossel{
-        display: none;
-    }
-    .buscar1{
-        display: none;
-    }
-
-    .produtos {
-        width: 135px;
-        height: 173px;
-        border-radius: 32px;
-    }
-
-    .prod {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 120px;
-        height: 173px;
-        padding: 0px;
-        /* bottom: 20px; */
-    }
-
-    .lista {
-        display: none;
-    }
-
-    .filtro {
-        display: none;
-    }
-
-    .buscar1 {
-        display: flex;
-        justify-content: center;
-    }
-
-    .imgHome {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-        justify-content: center;
-        column-gap: 65px;
-        row-gap: 100px;
-    }
-
-    .botaoCompra {
-        display: none;
-    }
-
-}
 
 body {
     margin: 0px;
     padding: 0px;
+}
+
+.head1 {
+    background-color: #000000;
+    display: flex;
+    height: 3vh;
+}
+.head2 {
+    background-color: silver;
+    display: flex;
+    height: 3vh;
+}
+
+.head2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-right: 1px solid #000000;
 }
 
 .titulo {
@@ -62,56 +29,8 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.carrossel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 200px;
-    width: 100%;
-    max-width: 1200px;
-    height: 60vh;
-    overflow: hidden;
-    max-width: 1200px;
 
-}
-
-.carrossel ul {
-    display: flex;
-    padding: 0px;
-    width: 100%;
-    animation: canva 7s ease infinite;
-}
-
-@keyframes canva {
-    0%{
-        margin-left: 0;
-    }
-    20%{
-        margin-left: 0;
-    }
-    25%{
-        margin-left: -2600px;
-    }
-    45%{
-        margin-left: -2600px;
-    }
-    50%{
-        margin-left: -2600px;
-    }
-    70%{
-        margin-left: 0;
-    }
-    75%{
-        margin-left: 0;
-    }
-    100%{
-        margin-left: 0;
-    }
-}
-
-
-h1 {
+.ELEVEN {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -127,108 +46,37 @@ h1 {
     border: 1px solid #000;
 }
 
+.imagens_marcas{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"]{
+    width: 10em;
+    height: 2em;
+    background: #E1E1E1;
+    border-radius:12px;
+    border: none;
+    padding: 0px 10px;
+    font-size: 1em;
+    color: #5E6272;
+    margin-left: 5vw;
+}
+
+#icon {
+    width: 1em;
+    height: 1em;
+    margin: 0px 10px;
+}
+
+
 h3 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-
-.head1 {
-    background-color: #312E2E;
-    display: flex;
-    height: 3vh;
-}
-.head2 {
-    background-color: silver;
-    display: flex;
-    height: 3vh;
-}
-.buscar1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 8vh;
-}
-
-.carrossel li{
-    width: 100%;
-    list-style: none;
-}
-
-#ulimg {
-    margin: 0;
-    display: flex;
-}
-.banner {
-    width: 60vw;
-    height: 40vh;
-    padding: 3vh;
-    position: relative;
-    margin-left: 30vw;
-    padding-right: 40vw;
-}
-
-.banner2{ 
-    width: 60vw;
-    height: 40vh;
-    padding: 3vh;
-    
-}
-
-.buscar{
-    position: absolute;
-    top: 90vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    background-color: silver;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    
-}
-
-.buscar:hover > .barraBusca {
-    width: 240px;
-    padding: 0 6px;
-}
-.buscar:hover > .botao-search {
-    background-color: #fff;
-    margin-left: 3px;
-}
-
-.botao-search {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    align-items: center;
-    transition: 0.4s;
-}
-
-.barraBusca {
-    border: none;
-    background-color: silver;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: #fff;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-    cursor: pointer;
-}
-
-.produtos {
-    /*flex-grow: 1;*/
-    min-width: 50%;
-    border-radius: 16px;
-}
 
 .imagens {
     display: flex;
@@ -259,24 +107,30 @@ img:hover {
     transform: scale(1.1);
 }
 
+.produtos{
+    border-radius: 20px;
+}
 .info {
     text-align: center;
     text-decoration: none;
-    padding-top: 5vh;
+    padding-top: 1vh;
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-.info h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
     color: #5E6272;
-    padding: 15px
 }
+
 
 .botaoCompra {
     width: 8vw;
     height: 3vh;
-    background-color: #ebe6e6;
-    border-radius: 4px;
+    background: #E4E4E4;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,5 +140,6 @@ img:hover {
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
+
+    filter: drop-shadow(0px 4px 4px rgba(50, 50, 71, 0.08)) drop-shadow(0px 4px 8px rgba(50, 50, 71, 0.06));
 }
