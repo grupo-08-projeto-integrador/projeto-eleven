@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title></title>
     <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <section class="home"><!--PRIMEIRA PÁGINA-->
@@ -12,9 +13,7 @@
     
     <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
         <div id="faixa1"></div>
-        <div id="faixa2">
-            
-        </div>
+        <div id="faixa2"></div>
         <div id="topbar">
 
             <div id="divVoltar"><button class="botao"><img id="pngtop" src="imagens/LeftVoltar.png"></button></div>
@@ -29,24 +28,45 @@
                     <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
                 </div>
 
-        <div class="PRODUTO">
-            <img id='imgproduto' src="                      ">
-            <div class="textprod">
-                <h2>T-Shirt HUGO BOSS</h2>
+        <div id="PRODUTO">
+            <img id='imgproduto' src="imagens/camisetas/camiseta.JPG">
+            <div id="descprod">
+                <p id="pDesc">Descriçao da peça de roupa <br>   
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
+                <h2 id="h2Prod">T-Shirt HUGO BOSS</h2>
+                <h3 id="h3Preço">R&#36; 300,00</h3>
+                
+                <div class="containerquantidade">
+                        <h2 id="Quant">Quantidade</h2>
+                        <div id="subcont">
+                            <button id="buttonDecrement">-</button>
+                            <input type="text" value="1" disabled id="counterValue">
+                            <button id="buttonIncrement">+</button>
+                        </div>
+                </div>
+                <button id="botaoaddcar">ADICIONAR AO CARRINHO</button>
             </div>
-            <div class="preçoprod">
-                <h3>R&#36; 460,00</h3>
-            </div>
-        </div>
-
-        <div class="containerquantidade">
-            <h2>Quantidade</h2>
-            <button id="buttonDecrement">-</button>
-            <input type="text" value="1" disabled id="counterValue">
-            <button id="buttonIncrement">+</button>
         </div>
 
         <script src="index.js"></script>
+
+        <div id="divoutros">
+            <div id="imgsoutros">
+                <img id="imgtam" src="imagens/camisetas/camiseta1.JPG">
+                <img id="imgtam" src="imagens/camisetas/camiseta2.JPG">
+                <img id="imgtam" src="imagens/camisetas/camiseta3.JPG">
+                <img id="imgtam" src="imagens/camisetas/camiseta4.JPG">
+            </div>
+            <div id="textoutros">
+                <p>Camiseta1 <br> <button>Comprar</button> </p>
+                <p>Camiseta2 <br> <button>Comprar</button> </p>
+                <p>Camiseta3 <br> <button>Comprar</button> </p>
+                <p>Camiseta4 <br> <button>Comprar</button></p>
+            </div>
+        </div>
+        
+
+        
 
     </section>
 
