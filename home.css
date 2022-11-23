@@ -54,22 +54,22 @@ body {
     justify-content: center;
     width: auto;
     height: 200px;
-    margin-bottom: 96px;
 }
 .ArmaniEx{
-    width: 150px;
+    max-width: 100px;
 }
 .GiorgioA{
-    width: 300px;
+    max-width: 200px;
 }
 .EmporioD{
-    width: 600px;
+    max-width: 400px;
 }
 .GivenchyD{
-    width: 300px;
+    max-width: 300px;
 }
 .HugoD{
-    width: 300px;
+    max-width: 300px;
+    width: 200px;
 }
 
 /*Carrossel*/
