@@ -1,0 +1,750 @@
+body{
+    font-family: 'Inter';
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+/*      Mobile      */
+@media screen and (max-width: 390px) {
+.productPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#faixa1{
+    display: none;
+}
+#faixa2{
+    display: flex;
+    width: 100vw;
+    height: 2vh;
+    background-color: #757575;;
+}
+#topbar{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#h1ELEVEN{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    margin-block-start: 0.40em;
+    margin-block-end: 0;
+}
+#divsearch{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E1E1E1;
+    width: 80vw;
+    border-radius: 8px;
+    margin-top: 14px;
+}
+input.input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    text-align: flex-start;
+
+}
+#imgproduto{
+    width: 80vw;
+    border-radius: 24px;
+}
+#PRODUTO{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 30px;
+}
+#descprod{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    color: black;
+    width: 80vw;
+    gap: 8px;
+}
+#pDesc{
+    display: none;
+}
+#h2Prod{
+    color: #666666;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin:0px;
+}
+#h3Preço{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+.containerquantidade{
+    display: flex;
+    width: auto;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+#Quant{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+    color: #000000;
+}
+#subcont{
+    font-family: 'Poppins';
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #B4B4B4;
+    border-radius: 1.8px;
+}
+#counterValue{
+    width: 100%;
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    background: #312E2E;
+    text-align: center;
+}
+#buttonDecrement{
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonDecrement:hover{
+    background-color: #FFFFFF;
+}
+#buttonIncrement{
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonIncrement:hover{
+    background-color: #FFFFFF;
+}
+#botaoaddcar{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #312E2E;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    backdrop-filter: blur(8px);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    font-family: 'Poppins';
+}
+#botaoaddcar:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+#divoutros{
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+#imgsoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros p{
+    flex-direction: column;
+    text-align: center;
+    color: #5E6272;
+    width: 15vw;
+}
+#textoutros button{
+    margin-top: 10px    ;
+    width: 15vw;
+    height: 6vh;
+    background: #E4E4E4;
+    border-radius: 5px;
+    border: none;
+    color: #040404;
+    text-align: center;
+    font-family: 'Poppins';
+}
+#imgtam{
+    width: 15vw;
+    border-radius: 12px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#imgtam:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+}
+/*      Desktop      */
+@media screen and (max-width: 1200px) {
+.productPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+#faixa1{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #312E2E;
+}
+#faixa2{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #C9C2C2;
+}
+#divVoltar {
+    display: none;
+}
+#h1ELEVEN{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    margin-block-start: 0.40em;
+    margin-block-end: 0;
+}
+#divCarrinho {
+    display: none;
+}
+#line2{
+    display: flex;
+    width: 30%;
+    height: 0px;
+    border: 1px solid #000000;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+#divsearch{
+    display: none;
+}
+#imgproduto{
+    width: 24vw;
+    border-radius: 20px;
+}
+#PRODUTO{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 30px;
+}
+#descprod{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    color: black;
+    width: 40%;
+    height: 100%;
+    gap: 12px;
+}
+#pDesc{
+    display: flex;
+    align-self: flex-start;
+    line-height: 24px;
+    color:#000000;
+}
+#h2Prod{
+    color: #666666;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin:0px;
+}
+#h3Preço{
+    font-family: 'Poppins';
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+.containerquantidade{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#Quant{
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 0px;
+    color: #000000;
+}
+#subcont{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 5.5vw;
+    border: 1px solid #B4B4B4;
+    border-radius: 1.8px;
+}
+#counterValue{
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    padding: 0px;
+    background: #312E2E;
+    text-align: center;
+    border: none;
+}
+#buttonDecrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonDecrement:hover{
+    background-color: #FFFFFF;
+}
+#buttonIncrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonIncrement:hover{
+    background-color: #FFFFFF;
+}
+#botaoaddcar{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #312E2E;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    backdrop-filter: blur(8px);
+    font-family: 'Poppins';
+}
+}
+
+
+/*      Tablet      */
+@media screen and (max-width: 768px) {
+.productPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+#faixa2{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #757575;;
+}
+#topbar{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#h1ELEVEN{
+    color: black;
+    font-family: 'Inter' , sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em silver;
+}
+#divsearch{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #E1E1E1;
+    width: 80vw;
+    height: 6vh;
+    border-radius: 8px;
+    gap: 10px;
+}
+input.input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 100%;
+
+}
+#imgproduto{
+    width: 80vw;
+    border-radius: 24px;
+}
+#PRODUTO{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 30px;
+}
+#descprod{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    color: black;
+    width: 80vw;
+    gap: 8px;
+}
+#pDesc{
+    display: none;
+}
+#h2Prod{
+    color: #666666;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin:0px;
+}
+#h3Preço{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+.containerquantidade{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-family: 'Poppins';
+}
+#Quant{
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px;
+    color: #000000;
+}
+#subcont{
+    font-family: 'Poppins';
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 10vw;
+    border: 1px solid #B4B4B4;
+    border-radius: 1.8px;
+}
+#counterValue{
+    font-family: 'Poppins';
+    width: 100%;
+    font-style: normal;
+    color: #FFFFFF;
+    padding: 0px;
+    background: #312E2E;
+    text-align: center;
+}
+#buttonDecrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonDecrement:hover{
+    background-color: #FFFFFF;
+}
+#buttonIncrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonIncrement:hover{
+    background-color: #FFFFFF;
+}
+#botaoaddcar{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #312E2E;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    backdrop-filter: blur(8px);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    font-family: 'Poppins';
+}
+#botaoaddcar:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+#divoutros{
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+#imgsoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros p{
+    flex-direction: column;
+    text-align: center;
+    color: #5E6272;
+    width: 15vw;
+}
+#textoutros button{
+    margin-top: 10px    ;
+    width: 15vw;
+    height: 6vh;
+    background: #E4E4E4;
+    border-radius: 5px;
+    border: none;
+    color: #040404;
+    text-align: center;
+    font-family: 'Poppins';
+}
+#imgtam{
+    width: 15vw;
+    border-radius: 12px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#imgtam:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+}
+
+/*      Desktop      */
+@media screen and (min-width: 1200px) {
+.productPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+#faixa1{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #312E2E;
+}
+#faixa2{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #C9C2C2;
+}
+#divVoltar {
+    display: none;
+}
+#h1ELEVEN{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    margin-block-start: 0.40em;
+    margin-block-end: 0;
+}
+#divCarrinho {
+    display: none;
+}
+#line2{
+    display: flex;
+    width: 30%;
+    height: 0px;
+    border: 1px solid #000000;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+#divsearch{
+    display: none;
+}
+#imgproduto{
+    width: 24vw;
+    border-radius: 20px;
+}
+#PRODUTO{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 30px;
+}
+#descprod{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    color: black;
+    width: 40%;
+    height: 100%;
+    gap: 12px;
+}
+#pDesc{
+    display: flex;
+    align-self: flex-start;
+    line-height: 24px;
+    color:#000000;
+}
+#h2Prod{
+    color: #666666;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin:0px;
+}
+#h3Preço{
+    font-family: 'Poppins';
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+}
+.containerquantidade{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#Quant{
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin: 0px;
+    color: #000000;
+}
+#subcont{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 5.5vw;
+    border: 1px solid #B4B4B4;
+    border-radius: 1.8px;
+}
+#counterValue{
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    background: #312E2E;
+    text-align: center;
+    border: none;
+    width: 2vw;
+}
+#buttonDecrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonDecrement:hover{
+    background-color: #FFFFFF;
+}
+#buttonIncrement{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #FFFEFB;
+    border: none;
+}
+#buttonIncrement:hover{
+    background-color: #FFFFFF;
+}
+#botaoaddcar{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #312E2E;
+    border: none;
+    border-radius: 24px;
+    color: #FFFFFF;
+    backdrop-filter: blur(8px);
+    font-family: 'Poppins';
+}
+#divoutros{
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+#imgsoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+#textoutros p{
+    flex-direction: column;
+    text-align: center;
+    color: #5E6272;
+    width: 15vw;
+}
+#textoutros button{
+    margin-top: 10px    ;
+    width: 15vw;
+    height: 6vh;
+    background: #E4E4E4;
+    border-radius: 5px;
+    border: none;
+    color: #040404;
+    text-align: center;
+    font-family: 'Poppins';
+}
+#imgtam{
+    width: 15vw;
+    border-radius: 12px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#imgtam:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+}
