@@ -14,6 +14,7 @@ body {
     display: flex;
     height: 3vh;
 }
+
 /*
 .head2 a {
     color: black;
@@ -28,6 +29,7 @@ body {
 .container {
     padding-left: 1rem;
 }
+
 .hamburguer {
     width: 2rem;
     height: 2rem;
@@ -40,8 +42,17 @@ body {
     cursor: pointer;
 }
 
+.x-img {
+    display: none;
+}
+
 .show-menu .hamburguer {
-    right: 16rem;
+    right: 95rem;
+    transition: 3s;
+}
+
+.show-menu .x-img {
+    display: block;
 }
 
 .line {
@@ -54,31 +65,18 @@ body {
     transition: .7s;
 }
 
-.show-menu #line1 {
-    transform: rotate(45deg) translate(.4rem, .9rem);
-    background-color: #5E6272;
-    box-shadow: none;
+.show-menu .line {
+    display: none;
 }
 
-.show-menu #line2 {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.show-menu #line3 {
-    transform: rotate(45deg) translate(.3rem, -.9rem);
-    background-color: #5E6272;
-    box-shadow: none;
-}
-
-.sidebar {
+.show-menu .sidebar {
     width: 20rem;
     height: 100vh;
-    background-color: linear-gradient(329.54deg, #111111 0%, #222222 100%);
+    background-color: #5E6272;
     box-shadow: 10px 5px 15px 10px black;
     position: fixed;
     top: 0;
-    right: -20rem;
+    right: 95rem;
     transition: all .8s;
 }
 
@@ -99,9 +97,14 @@ body {
     color: #fff;
     transition: .7s;
 }
-.menu-link:hover{
+
+.menu-link:hover {
     color: rgb(0, 255, 255);
     transition: .7s;
+}
+
+.cu {
+    display: none;
 }
 
 /*Menu*/
@@ -124,7 +127,8 @@ body {
     text-align: center;
 }
 
-.menu2 { /*começa as imagens*/
+.menu2 {
+    /*começa as imagens*/
     height: 16vh;
     max-width: 100vw;
     background-size: cover;
@@ -237,6 +241,7 @@ body {
     transition: .5s;
     opacity: 0;
 }
+
 /*Fim Menu*/
 /*Carrossel*/
 .slider {
