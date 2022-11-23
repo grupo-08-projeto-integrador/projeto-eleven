@@ -15,16 +15,6 @@ body {
     height: 3vh;
 }
 
-/*
-.head2 a {
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-    margin: 0px 10px;
-    padding: 0px 10px;
-    border-right: 1px solid #000000;
-}
-*/
 /*Menu Hamburguer*/
 .container {
     padding-left: 1rem;
@@ -102,10 +92,7 @@ body {
     color: rgb(0, 255, 255);
     transition: .7s;
 }
-
-.cu {
-    display: none;
-}
+/*Menu hamburguer fim*/
 
 /*Menu*/
 .dropdown-container {
@@ -243,6 +230,7 @@ body {
 }
 
 /*Fim Menu*/
+
 /*Carrossel*/
 .slider {
     margin: 0 auto;
