@@ -7,7 +7,6 @@ body{
     margin: 0px;
     border: 0px;
     width: 100vw;
-    height: 100%;
 }
 /*      Mobile      */
 @media (max-width:425px) {
@@ -446,6 +445,36 @@ input.input{
     flex-direction: column;
     width: 100vw;
 }
+#burguer{
+    width: 2.5%;
+}
+#burguer:hover{
+    background-color: white;
+    cursor: pointer;
+}
+#ulitens{
+    display: flex;
+    width: 100vw;/*   DEIXAR NA ESQUERDA DPS      */
+    flex-direction: column;
+    background-color: aqua;
+    gap: 32px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#itensmenu{
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins';
+}
+li::marker{
+    display: none;
+    padding: 0px;
+    color : transparent;
+}
 #faixa1{
     display: flex;
     width: 100vw;
@@ -565,6 +594,7 @@ input.input{
 }
 #buttonDecrement:hover{
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 #buttonIncrement{
     width: 50%;
@@ -575,6 +605,7 @@ input.input{
 }
 #buttonIncrement:hover{
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 #botaoaddcar{
     margin-top: 16px;
@@ -589,12 +620,12 @@ input.input{
     font-family: 'Poppins';
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    cursor: pointer;
 }
 #botaoaddcar:hover{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
-
 #divoutros{
     margin-top: 40px;
     display: flex;
@@ -638,6 +669,7 @@ input.input{
 .divimg button:hover{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
+    cursor: pointer;
 }
 #imgtam{
     width: 15vw;
