@@ -32,6 +32,12 @@ body{
     align-items: center;
     margin-top: 10px;
 }
+#burguer{
+    display: none;
+}
+#divham{
+    display: none;
+}
 #h1ELEVEN{
     display: flex;
     width: 100%;
@@ -246,6 +252,12 @@ input.input{
     justify-content: space-around;
     align-items: center;
     max-height: 50px;
+}
+#burguer{
+    display: none;
+}
+#divham{
+    display: none;
 }
 #h1ELEVEN{
     color: black;
