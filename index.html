@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./contatos.css">
+    <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>Document</title>
 </head>
@@ -50,58 +50,43 @@
             </div>
             <h1 id="titulo2">Contatos</h1>
             <div class="boxes">
-                <button id="box1"><img class="insta" src="imgContato\insta.png" alt="Instagram"><a id="boxtx1">
-                        Instagram </a></button>
+                <a id="boxtx1"><button id="box1"><img class="insta" src="imgContato\insta.png" alt="Instagram">
+                        Instagram </button></a>
                 <p></p>
-                <button id="box2" href=""><img class="loc" src="imgContato\loc.png" alt="Localização">
-                    Localização</button>
+                <a id="boxtx1"></a><button id="box2" href=""><img class="loc" src="imgContato\loc.png" alt="Localização">
+                    Localização</button></a>
                 <p></p>
-                <button id="box3"><img class="email" src="imgContato\email.png" alt="Email"> E-Mail</button>
+                <a id="boxtx1"></a><button id="box3"><img class="email" src="imgContato\email.png" alt="Email"> E-Mail</button></a>
                 <p></p>
-                <button id="box4"><img class="zap" src="imgContato\zap.png" alt="Whats"> WhatsApp</button>
+                <a id="boxtx1"></a><button id="box4"><img class="zap" src="imgContato\zap.png" alt="Whats"> WhatsApp</button></a>
             </div>
         </div>
         <div class="Desktop">
-            <div class="bordatop"></div>
-            <div class="bordamenu">
-                <nav role="navigation">
-                    <span id="linhamenu"></span>
-                    <p id="menuele">ELEVEN</p>
-                    <div id="menuToggle">
-                        <input type="checkbox"/>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <ul id="menu">
-                            <a href="">
-                                <li> HomeTest </li>
-                            </a>
-                            <a href="">
-                                <li> HomeTest </li>
-                            </a>
-                            <a href="">
-                                <li> HomeTest </li>
-                            </a>
-                            <a href="">
-                                <li> HomeTest </li>
-                            </a>
-                            <a href="">
-                                <li> HomeTest </li>
-                            </a>
-
-                        </ul>
-
+            <div id="faixa1"></div>
+            <div id="faixa2">
+                <img id="burguer" src="imgContato\outline_menu_black_24dp.png" onclick="clickMenu()">
+            </div>
+            <div id="divham">
+                <menu id="itensmenu">
+                    <ul id="ulitens">
+                        <li><a href=".home">Home</a></li>
+                        <li><a href=".carrinho">Carrinho</a></li>
+                        <li><a href=".register">Registro</a></li>
+                        <li><a href=".contatos">Contatos</a></li>
+                    </ul>
+                </menu>
+            </div>
+            <div class="dropdown-container">
+                <div class="dropdown-menu">
+                    <div class="dropdown-hover">ELEVEN</div>
+                    <div class="linha"></div>
+                    <div class="menu2">
+                         <a href="#" class="img-marca"> <img class="HugoD" src="imgContato\hugoboss.png" alt="marca1"></a>
+                         <a href="#" class="img-marca"> <img src="imgContato\emporio.png" alt="marca2" class="EmporioD"></a>
+                         <a href="#" class="img-marca"> <img src="imgContato\Giorgio_Armani.png" alt="marca3" class="GiorgioA"></a>
+                         <a href="#" class="img-marca"> <img src="imgContato\ArmaniEx.png" alt="marca4" class="ArmaniEx"></a>
                     </div>
-            </div>
-            <div class="titulod">
-                <h1 id="elevD">ELEVEN</h1>
-                <span id="linha"></span>
-            </div>
-            <div class="banner">
-                <img class="HugoD" src="imgContato\hugoboss.png" alt="hugoboss">
-                <img class="GiorgioA" src="imgContato\Giorgio_Armani.png" alt="GiorgioArmani">
-                <img class="EmporioD" src="imgContato\emporio.png" alt="emporio">
-                <img class="ArmaniEx" src="imgContato\ArmaniEx.png" alt="ArmaniEx">
+                </div>
             </div>
             <div class="contatoD">
                 <div class="boxesD">
@@ -118,7 +103,7 @@
                             WhatsApp</button></a>
                 </div>
                 <img class="fundolojaD" src="imgContato\fundoloja.png" alt="Loja">
-
+                <script src="productpagehamb.js"></script>
             </div>
         </div>
         </div>

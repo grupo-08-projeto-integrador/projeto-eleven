@@ -90,6 +90,8 @@
     }
 
     #ulimg {
+        width: 100%;
+        max-width: 390px;
         margin: 0px;
         display: flex;
     }
@@ -353,9 +355,9 @@
 
     .boximg {}
 
+   
     .slider {
         width: 100%;
-        max-width: 760px;
         margin: auto;
         overflow: hidden;
     }
@@ -364,7 +366,7 @@
         display: flex;
         padding: 0;
         width: 100%;
-        animation: cambio 11s ease infinite;
+        animation: cambio 11s ease infinite ;
     }
 
     .slider li {
@@ -373,10 +375,12 @@
     }
 
     .slider img {
-
+        display: flex;
+        justify-content: center;
     }
-
     #ulimg {
+        width: 100%;
+        max-width: 760px;
         margin: 0px;
         display: flex;
     }
@@ -450,16 +454,8 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
-
-    #boxtx1 {
-        color: black;
-        text-decoration: none;
-    }
-
-    #boxtx1:hover {
-        color: white;
+        background: #312E2E;
+        color: #ffffff;
     }
 
     #box1:hover {
@@ -483,8 +479,9 @@
         width: 340px;
         height: 66px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box2:hover {
         -moz-transform: scale(1.1);
@@ -507,8 +504,9 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box3:hover {
         -moz-transform: scale(1.1);
@@ -530,8 +528,9 @@
         width: 340px;
         height: 60px;
         border-radius: 31px;
-        background: linear-gradient(to right, #BF953F, #B38728, #AA771C,#faf3ac);
-    }
+        background: #312E2E;
+        color: #ffffff;
+        }
 
     #box4:hover {
         -moz-transform: scale(1.1);
@@ -608,184 +607,208 @@
         margin: 0;
         padding: 0;
     }
-    .bordatop{
-        width: auto;
-        height: 26px; 
-        background: #312E2E;
-    }
-    [role=navigation]{
+    #faixa1{
         display: flex;
-        flex-direction:row-reverse;
-        
+        width: 100vw;
+        height: 4vh;
+        background-color: #312E2E;
     }
-    #menuToggle{
-      margin-right: 20px;
-      float: inherit;
-      display:block;
-      position:relative;
-      top:2px;
-      left:15px;
-      z-index:1;
-      -webkit-user-select:none;
-      user-select:none;
-      }
-  
-      #menuToggle input{
-      display:block;
-      width:40px;
-      height:32px;
-      position:absolute;
-      top:-7px;
-      left: -5px;
-      cursor:pointer;
-      opacity: 0; /*hide this */
-      z-index: 2; /* and place it over the hamburguer*/
-      -webkit-touch-callout:none;
-      }
-  
-      #menuToggle span{
-      display:block;
-      width:33px;
-      height:4px;
-      margin-bottom:5px;
-      position:relative;
-      background:#131212;
-      border-radius:3px;
-      z-index:1;
-      transform-origin:4px 0px;
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            opacity 0.55s ease;
-      }
-  
-      #menuToggle span:first-child{
-      transform-origin:0% 0%;
-      }
-  
-      #menuToggle span:nth-last-child(2){
-      transform-origin:0% 100%;
-      }
-  
-      #menuToggle input:checked ~ span{
-      opacity:1;
-      transform:rotate(45deg) translate(-2px, -1px);
-      background: #232323;
-      }
-  
-      #menuToggle input:checked ~ span:nth-last-child(3){
-      opacity:0;
-      transform:rotate(0deg) scale(0.2, 0.2);
-      }
-  
-      #menuToggle input:checked ~ span:nth-last-child(2){
-      transform:rotate(-45deg) translate(0, -1px);
-      }
-  
-      #menu{
-      position:absolute;
-      width:100px;
-      padding:70px;
-      margin: -100px 0 0 -60px;
-      padding-top:125px;
-      background:#C9C2C2;
-      list-style-type:none;
-      -webkit-font-smoothing:antialiased;
-      transform-origin: 0% 0%;
-      transform:translate(-100%, 0);
-      transition:transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-      }
-      #menu a{
-        text-decoration: none;
-      }
-      #menu li{
-      padding:10px 0;
-      font-size:22px;
-      list-style: none;
-      text-decoration: none;
-      color: #131212;
-      }
-  
-      #menuToggle input:checked ~ ul{
-      transform: none;
-      }
-    .bordamenu{
-        width: auto;
-        height: 30px;
-        background: #C9C2C2;
+    #faixa2{
         display: flex;
-        flex-direction: row;
+        width: 100vw;
+        height: 4vh;
+        background-color: #C9C2C2;
     }
-    #menuele{
-        font-weight: 1000;
-        font-family: 'Inter';
-        display: flex;
-        align-items: center;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;       
-        color: #000000;
+    #burguer{
+        width: 2.5%;
     }
-    #linhamenu{
-        display: flex;
-        justify-content: center;
-        width: 4px;
-        position: relative;
-        top: 3px;
-        height: 20px;
-        border-right: 3px solid #000000;
+    #burguer:hover{
+        background-color: white;
+        cursor: pointer;
     }
-    .titulod{
+    #ulitens{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 900;
-        line-height: 96px;
-        font-family: 'Inter';
+        background-color: #312E2E;
+        width: 10vw;
+        border-end-end-radius: 12px;
+        gap: 20px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 0;
+        animation: go-back 1s;
     }
-    h1 {
+    @keyframes go-back {
+        0% {
+            transform: translateX(-110px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    #ulitens a{
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    #divham{
+        display: block;
+        justify-self: flex-start;   
+    }
+    #itensmenu{
         display: flex;
-        width: 100%;
-        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Poppins';
+        
+    }
+    li::marker{
+        display: none;
+        padding: 0px;
+        color : transparent;
+    }
+    .dropdown-container {
+        display: flex;
+    }
+    
+    .dropdown-hover {
+        width: 99vw;
+        height: 6vh;
         font-size: 60px;
         font-family: sans-serif;
         font-weight: 1000;
-        margin-block-start: 0.40em;
-        margin-block-end: 0;
+        cursor: pointer;
+        margin-bottom: 70px;
     }
-    #linha{
+    .linha{
         display: flex;
-        width: 198px;
-        height: 0px;
-        left: 511px;
-        top: 113px;
+        width: 100%;
+        max-width: 290px;
+        align-self: center;
         border: 1px solid #000000;
-        margin-bottom: -39px;
     }
-    .banner{
+    
+    .dropdown-menu {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 130px;
+    }
+    
+    .menu2 {
+        /*comeÃ§a as imagens*/
+        height: 16vh;
+        max-width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        display: flex;
         justify-content: center;
-        width: auto;
-        height: 200px;
-        margin-bottom: 96px;
+        align-items: center;
+        overflow: hidden;
+        gap: 5vw;
     }
-    .ArmaniEx{
-        width: 177px;
+    
+    .menu2 .img-marca {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-shadow: 0 0 .5em rgba(0, 0, 0, 0.75);
+        
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 1rem;
     }
-    .GiorgioA{
-        width: 300px;
+    
+    .menu2 .img-marca:nth-child(1),
+    .menu2 .img-marca:nth-child(2),
+    .menu2 .img-marca:nth-child(3),
+    .menu2 .img-marca:nth-child(4) {
+        z-index: 20;
     }
-    .EmporioD{
-        width: 300px;
+    
+    .menu2 .img-marca:hover {
+        z-index: 25;
     }
-    .GivenchyD{
-        width: 300px;
+    
+    .menu2 .img-marca::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(0);
+        display: inline-block;
+        width: 20vw;
+        height: 15vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: ;
+        box-shadow: 0 0 0 200vw rgba(255, 123, 0, 0);
+        transition: transform 500ms ease, box-shadow 200ms linear;
     }
-    .HugoD{
-        width: 300px;
+    
+    .menu2 .img-marca:hover::after {
+        transform: translate(-50%, -50%) scaleX(1);
+        box-shadow: 0 0 0 200vw rgba(0, 0, 0, 0.5);
+    }
+    
+    .menu2 .img-marca:nth-of-type(1)::after {
+        background-image: url(imgContato\hugoboss.png);
+    }
+    
+    .menu2 .img-marca:nth-of-type(2)::after {
+        background-image: url(imgContato\emporio.png);
+    }
+    
+    .menu2 .img-marca:nth-of-type(3)::after {
+        background-image: url(imgContato\Giorgio_Armani.png);
+    }
+    
+    .menu2 .img-marca:nth-of-type(4)::after {
+        background-image: url(imgContato\ArmaniEx.png);
+    }
+    
+    .ArmaniEx {
+        width: 142px;
+    }
+    
+    .GiorgioA {
+        max-width: 208px;
+    }
+    
+    .EmporioD {
+        max-width: 400px;
+    }
+    
+    .HugoD {
+        max-width: 300px;
+        width: 200px;
+    }
+    
+    .HugoD:hover {
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    .ArmaniEx:hover {
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    .GiorgioA:hover {
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    .EmporioD:hover {
+        transition: .5s;
+        opacity: 0;
     }
     .contatoD{
         display: flex;
