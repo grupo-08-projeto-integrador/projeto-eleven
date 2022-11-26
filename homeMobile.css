@@ -1,0 +1,90 @@
+@media screen and (max-width: 390px) {
+
+    body {
+        max-width: 390px;
+    }
+
+    #hamburguer {
+        display: flex;
+    }
+
+    #hamburguer-menu {
+        height: 25px;
+    }
+
+    .line {
+        height: 5px;
+        width: 8vw;
+    }
+
+    .nav ul {
+        padding: 50px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav li a {
+        box-sizing: none;
+        border: none;
+    }
+
+    .menu2 {
+        display: none;
+    }
+
+    .slider {
+        padding-top: 3vh;
+        max-width: 390px;
+        height: 28vh;
+    }
+
+    .slide img {
+        width: 100vw;
+    }
+
+    .slides {
+        height: 20vh;
+    }
+
+    .manual-navigation {
+        margin-top: 1vh;
+        width: 100vw;
+    }
+
+    .buscar {
+        display: flex;
+        justify-content: center;
+        padding: 35px;
+    }
+
+    .imgHome img {
+        width: 40vw;
+    }
+
+    .imgHome .prod {
+        height: 32vh;
+    }
+
+    .info {
+        font-size: 13px;
+        line-height: 16px;
+        align-items: center;
+    }
+
+    .imgHome .prod .info {
+        padding: 20px;
+        text-align: center;
+        transform: none;
+        opacity: 1;
+        transition: none;
+    }
+    
+    .imgHome .prod:hover .info {
+        transform: none;
+        opacity: 1;
+    }
+
+    
+
+}

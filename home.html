@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" media="(max-width: 391px)" href="home.css" />
+    <link rel="stylesheet" media="(max-width: 391px)" href="./homeMobile.css" />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>Document</title>
 </head>
@@ -43,8 +43,7 @@
                 <div class="menu2">
                     <a href="#" class="img-marca"> <img class="HugoD" src="./marcas/hugoboss.png" alt="marca1"></a>
                     <a href="#" class="img-marca"> <img src="./marcas/emporio.png" alt="marca2" class="EmporioD"></a>
-                    <a href="#" class="img-marca"> <img src="./marcas/giorgio_armani.png" alt="marca3"
-                            class="GiorgioA"></a>
+                    <a href="#" class="img-marca"> <img src="./marcas/giorgio_armani.png" alt="marca3"class="GiorgioA"></a>
                     <a href="#" class="img-marca"> <img src="./marcas/ArmaniEx.png" alt="marca4" class="ArmaniEx"></a>
                 </div>
             </div>
@@ -84,16 +83,17 @@
                     speed: 400,
                 });
             </script>
+            <div class="buscar">
+                <input type="text" placeholder="O que voce Procura?" />
+            </div>
         </div>
-        <div class="buscar">
-            <input type="text" placeholder="O que voce Procura?" />
-        </div>
+        
         <div class="imagens">
             <div class="imgHome">
                 <div class="prod">
                     <img class="produtos" src="./camisetas/camiseta.JPG" alt="camiseta">
                     <div class="info">
-                        <h3>T-shirt Amani EA7</h3>
+                        <h3>Camiseta</h3>
                         <h3 id="price">$160.00</h3>
                         <a href="#" class="botaoCompra">COMPRAR</a>
                     </div>
@@ -154,7 +154,7 @@
                         <a href="" class="botaoCompra">COMPRAR</a>
                     </div>
                 </div>
-                <script type="text/javascript" src="./vanilla-tilt.js"></script>
+                <script type="text/javascript" media="min-width = 480px" src="./vanilla-tilt.js"></script>
                 <script>VanillaTilt.init(document.querySelectorAll(".prod"), {
                         max: 25,
                         speed: 400,

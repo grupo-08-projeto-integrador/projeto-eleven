@@ -8,6 +8,7 @@ var VanillaTilt = (function () {
  * Version 1.7.3
  */
 
+
 class VanillaTilt {
   constructor(element, settings = {}) {
     if (!(element instanceof Node)) {
