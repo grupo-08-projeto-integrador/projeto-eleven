@@ -14,37 +14,38 @@
 <body>
     <header class="head1"></header>
     <header class="head2"></header>
-    <div class="container">
-        <div class="hamburguer">
+    <div id="hamburguer">
+        <div id="hamburguer-menu" onclick="hamburguerOnClick()">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
-            <img class="x-img"src="/projeto-eleven/x.png">
         </div>
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Carrinho</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Camisetas</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Calças</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Tênis</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <script  src="./home2.js"></script>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Calças</a></li>
+                <li><a href="#">Tênis</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bg" id="menu-bg"></div>
+        <script src="./home2.js"></script>
     </div>
+
     <section class="home">
         <!--PRIMEIRA PÁGINA-->
         <div class="dropdown-container">
             <div class="dropdown-menu">
                 <div class="dropdown-hover">ELEVEN</div>
                 <div class="menu2">
-                     <a href="#" class="img-marca"> <img class="HugoD" src="./marcas/hugoboss.png" alt="marca1"></a>
-                     <a href="#" class="img-marca"> <img src="./marcas/emporio.png" alt="marca2" class="EmporioD"></a>
-                     <a href="#" class="img-marca"> <img src="./marcas/giorgio_armani.png" alt="marca3" class="GiorgioA"></a>
-                     <a href="#" class="img-marca"> <img src="./marcas/ArmaniEx.png" alt="marca4" class="ArmaniEx"></a>
+                    <a href="#" class="img-marca"> <img class="HugoD" src="./marcas/hugoboss.png" alt="marca1"></a>
+                    <a href="#" class="img-marca"> <img src="./marcas/emporio.png" alt="marca2" class="EmporioD"></a>
+                    <a href="#" class="img-marca"> <img src="./marcas/giorgio_armani.png" alt="marca3"
+                            class="GiorgioA"></a>
+                    <a href="#" class="img-marca"> <img src="./marcas/ArmaniEx.png" alt="marca4" class="ArmaniEx"></a>
                 </div>
             </div>
         </div>
@@ -77,6 +78,12 @@
                 <label for="radio3" class="manual-btn"></label>
             </div>
             <script src="./home.js"></script>
+            <script type="text/javascript" src="./vanilla-tilt.js"></script>
+            <script>VanillaTilt.init(document.querySelectorAll(".slider"), {
+                    max: 7,
+                    speed: 400,
+                });
+            </script>
         </div>
         <div class="buscar">
             <input type="text" placeholder="O que voce Procura?" />
@@ -147,26 +154,16 @@
                         <a href="" class="botaoCompra">COMPRAR</a>
                     </div>
                 </div>
+                <script type="text/javascript" src="./vanilla-tilt.js"></script>
+                <script>VanillaTilt.init(document.querySelectorAll(".prod"), {
+                        max: 25,
+                        speed: 400,
+                        glare: true,
+                        "max-glare": 0.2,
+                    });
+                </script>
             </div>
         </div>
-
-
-    </section>
-    <section class="productPage">
-        <!--PÁGINA DO PRODUTO SELECIONADO-->
-
-    </section>
-    <section class="carrinho">
-        <!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
-
-    </section>
-    <section class="register">
-        <!--PÁGINA DE REGISTRO-->
-
-    </section>
-    <section class="contatos">
-        <!--PÁGINA DE CONTATO-->
-
     </section>
 </body>
 

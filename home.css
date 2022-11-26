@@ -1,6 +1,10 @@
 body {
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(90deg,
+            rgb(0, 0, 0) 0%,
+            rgb(118, 118, 124) 35%,
+            rgb(224, 231, 233) 100%);
 }
 
 .head1 {
@@ -16,82 +20,113 @@ body {
 }
 
 /*Menu Hamburguer*/
-.container {
-    padding-left: 1rem;
+#hamburguer {
+    z-index: 2;
 }
 
-.hamburguer {
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    z-index: 5;
-    top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#hamburguer-menu {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
 }
 
-.x-img {
+.line {
+    height: 5px;
+    width: 2vw;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+#line1 {
+    transform: translateY(-4px);
+}
+
+#line3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
     display: none;
 }
 
-.show-menu .hamburguer {
-    right: 95rem;
-    transition: 3s;
+.nav ul {
+    padding: 0 22px;
+    flex-direction: row;
+    display: flex;
+
 }
 
-.show-menu .x-img {
+.nav li {
+    list-style: none;
+    padding: 0px 5vw;
+}
+
+.nav li a {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0px;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.nav li a:hover {
+    background-color: #000000;
+    outline: 0;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background-color: #5E6272;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.menu-bg #hamburguer {
+    top: 50px;
+    left: 0;
+    position: absolute;
+}
+
+.change {
     display: block;
 }
 
-.line {
-    width: 100%;
-    height: 1rem;
-    padding: 1px;
-    border-radius: 10px;
-    background-color: #5E6272;
-    box-shadow: 0.1rem 0.1rem 3px black;
-    transition: .7s;
+.change .line {
+    background-color: #fff;
 }
 
-.show-menu .line {
-    display: none;
+.change #line1 {
+    transform: translateX(4px) rotate(-45deg);
 }
 
-.show-menu .sidebar {
-    width: 20rem;
-    height: 100vh;
-    background-color: #5E6272;
-    box-shadow: 10px 5px 15px 10px black;
-    position: fixed;
-    top: 0;
-    right: 95rem;
-    transition: all .8s;
+.change #line2 {
+    opacity: 0;
 }
 
-.menu {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.change #line3 {
+    transform: translateX(6px) rotateZ(45deg);
 }
 
-.menu-item {
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-.menu-link {
-    font-size: 2rem;
-    color: #fff;
-    transition: .7s;
-}
-
-.menu-link:hover {
-    color: rgb(0, 255, 255);
-    transition: .7s;
-}
 /*Menu hamburguer fim*/
 
 /*Menu*/
@@ -329,6 +364,8 @@ h3 {
     margin-block-end: 0;
 }
 
+/*cards animados*/
+
 .imagens {
     display: flex;
     overflow: hidden;
@@ -338,10 +375,27 @@ h3 {
 .imgHome {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    max-width: 100vw;
     justify-content: center;
-    column-gap: 145px;
-    row-gap: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.imgHome .prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 20vw;
+    height: 50vh;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.imgHome .prod:hover {
+    border: 1px solid rgba(126, 123, 123, 0.5);
+    border-bottom: none;
 }
 
 .imgHome img {
@@ -352,10 +406,22 @@ h3 {
     border-radius: 20px;
 }
 
+.imgHome .prod .info {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.imgHome .prod:hover .info {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .info {
     text-align: center;
     text-decoration: none;
-    padding-top: 1vh;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -364,7 +430,7 @@ h3 {
     font-weight: 100;
     font-size: 14px;
     line-height: 24px;
-    color: #5E6272;
+    color: #000000;
     gap: 5px;
 }
 
@@ -383,6 +449,11 @@ h3 {
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
-
     filter: drop-shadow(0px 4px 4px rgba(50, 50, 71, 0.08)) drop-shadow(0px 4px 8px rgba(50, 50, 71, 0.06));
 }
+
+.botaoCompra:hover {
+    background: green;
+}
+
+/*fim card animado*/
