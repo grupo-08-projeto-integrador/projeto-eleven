@@ -11,25 +11,36 @@
     <section class="home"><!--PRIMEIRA PÁGINA-->
 
     </section>
-    
-    <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
         <div id="faixa1"></div>
-        <div id="faixa2">
-            <img id="burguer" src="icons/outline_menu_black_24dp.png" onclick="clickMenu()">
+        <div id="faixa2"></div>
+
+    <div id="hamburguer">
+        <div id="hamburguer-menu" onclick="hamburguerOnClick()">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
         </div>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Calças</a></li>
+                <li><a href="#">Tênis</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bg" id="menu-bg"></div>
+        <script src="./home2.js"></script>
+    </div>
+
+    <section class="productPage"><!--PÁGINA DO PRODUTO SELECIONADO-->
+        
+        
+
         <div id="topbar">
-
-            <div id="divham">
-                <menu id="itensmenu">
-                    <ul id="ulitens">
-                        <li><a href=".home">Home</a></li>
-                        <li><a href=".carrinho">Carrinho</a></li>
-                        <li><a href=".register">Registro</a></li>
-                        <li><a href=".contatos">Contatos</a></li>
-                    </ul>
-                </menu>
-            </div>
-
+            
             <div id="divVoltar"><button id="botaoimg"><img id="pngtop" src="imagens/LeftVoltar.png"></button></div>
 
             <div id="divELEVEN"><h1 id="h1ELEVEN">ELEVEN</h1></div>
@@ -37,7 +48,7 @@
             <div id="divCarrinho"><button id="botaoimg"><img id="pngtop" src="imagens/shoppingCarrinho.png"></button></div>
 
         </div>
-        <div id="line2"></div>
+        <div id="line4"></div>
                 <div id="divsearch">
                     <input type="text" aria-label="Realizar Busca" autocomplete="off" name="Ntt"  value class="input" placeholder="O Que Você Procura ?">
                 </div>
@@ -62,30 +73,51 @@
             </div>
         </div>
 
-        
-
-        <div id="divoutros">
-            <div id="imgsoutros">
-                <div class="divimg">
-                <img id="imgtam" src="imagens/camisetas/camiseta1.JPG">
-                <p>Camiseta1 <br></p> <button class="buttoncom">Comprar</button>
+        <div class="imagens">
+            <div class="imgHome">
+                <div class="prod">
+                    <img class="produtos" src="imagens/camisetas/camiseta1.JPG" alt="camiseta">
+                    <div class="info">
+                        <h3>Camiseta</h3>
+                        <h3 id="price">$160.00</h3>
+                        <a href="#" class="botaoCompra">COMPRAR</a>
+                    </div>
                 </div>
-                <div class="divimg">
-                <img id="imgtam" src="imagens/camisetas/camiseta2.JPG">
-                <p>Camiseta2 <br></p> <button class="buttoncom">Comprar</button>
+                <div class="prod">
+                    <img class="produtos" src="imagens/camisetas/camiseta2.JPG" alt="camiseta">
+                    <div class="info">
+                        <h3>Camiseta</h3>
+                        <h3 id="price">$160.00</h3>
+                        <a href="" class="botaoCompra">COMPRAR</a>
+                    </div>
                 </div>
-                <div class="divimg">
-                <img id="imgtam" src="imagens/camisetas/camiseta3.JPG">
-                <p>Camiseta3 <br></p> <button class="buttoncom">Comprar</button>
+                <div class="prod">
+                    <img class="produtos" src="imagens/camisetas/camiseta3.JPG" alt="camiseta">
+                    <div class="info">
+                        <h3>Camiseta</h3>
+                        <h3 id="price">$160.00</h3>
+                        <a href="" class="botaoCompra">COMPRAR</a>
+                    </div>
                 </div>
-                <div class="divimg">
-                <img id="imgtam" src="imagens/camisetas/camiseta4.JPG">
-                <p>Camiseta4 <br></p> <button class="buttoncom">Comprar</button>
+                <div class="prod">
+                    <img class="produtos" src="imagens/camisetas/camiseta4.JPG" alt="camiseta">
+                    <div class="info">
+                        <h3>Camiseta</h3>
+                        <h3 id="price">$160.00</h3>
+                        <a href="" class="botaoCompra">COMPRAR</a>
+                    </div>
                 </div>
+                <script type="text/javascript" media="min-width = 480px" src="./vanilla-tilt.js"></script>
+                <script>VanillaTilt.init(document.querySelectorAll(".prod"), {
+                        max: 25,
+                        speed: 400,
+                        glare: true,
+                        "max-glare": 0.2,
+                    });
+                </script>
             </div>
-            
-                
         </div>
+
         <script src="productpagequantidade.js"></script>
                 <script src="productpagehamb.js"></script>
     </section>
