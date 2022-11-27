@@ -23,6 +23,7 @@ body {
 /*Menu Hamburguer*/
 #hamburguer {
     z-index: 2;
+    display: flex;
 }
 
 #hamburguer-menu {
@@ -52,17 +53,20 @@ body {
 .nav {
     transition: 0.3s ease;
     display: none;
+    background-color: darkgray;
+    border-radius: 25px;
+    width: 100vw;
 }
 
 .nav ul {
-    padding: 0 50px;
+    padding: 0px 50px;
     flex-direction: row;
     display: flex;
 }
 
 .nav li {
     list-style: none;
-    padding: 0px 5vw;
+    padding: 0px 2vw;
 }
 
 .nav li a {
@@ -95,7 +99,7 @@ body {
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+   
     background-color: #5E6272;
     border-radius: 10px;
     transition: 1s;
@@ -116,7 +120,7 @@ body {
 }
 
 .change #line1 {
-    transform: translateX(4px) rotate(-45deg);
+    transform: translateY(11px) rotate(45deg);
 }
 
 .change #line2 {
@@ -124,7 +128,7 @@ body {
 }
 
 .change #line3 {
-    transform: translateX(6px) rotateZ(45deg);
+    transform: translateY(-5px) rotateZ(135deg);
 }
 
 /*Menu hamburguer fim*/

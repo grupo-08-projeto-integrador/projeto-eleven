@@ -13,7 +13,18 @@
         height: 25px;
     }
 
-
+    .change #line1 {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .change #line2 {
+        opacity: 0;
+    }
+    
+    .change #line3 {
+        transform: translateY(-5px) rotateZ(135deg);
+    }
+    
     .line {
         height: 5px;
         width: 3vw;
