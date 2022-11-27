@@ -1,4 +1,4 @@
-@media (max-width:390px) {
+@media (max-width:425px) {
     .Desktop{
         margin: 0;
         padding: 0;
@@ -13,36 +13,36 @@
         justify-content: center;
         align-items: center;
     }
-    #hamburguer {
+    #hamburguer1 {
         z-index: 2;
         display: flex;
     }
     
-    #hamburguer-menu {
+    #hamburguer-menu1 {
         width: 45px;
         height: 40px;
-        margin: 30px 0 20px 20px;
+        margin: -17vw 0 20px 20px;
         cursor: pointer;
     }
     
-    .line {
+    .line1 {
         height: 8px;
-        width: 2vw;
-        background-color: #fff;
+        width: 9vw;
+        background-color: rgb(17, 17, 17);
         display: block;
         border-radius: 5px;
         transition: 1s;
     }
     
-    #line1 {
+    #line11 {
         transform: translateY(-4px);
     }
     
-    #line3 {
+    #line33 {
         transform: translateY(4px);
     }
     
-    .nav {
+    .nav1 {
         transition: 0.3s ease;
         display: none;
         background-color: darkgray;
@@ -50,23 +50,23 @@
         width: 100vw;
     }
     
-    .nav ul {
+    .nav1 ul {
         padding: 0px 50px;
-        flex-direction: row;
+        flex-direction: column;
         display: flex;
     }
     
-    .nav li {
+    .nav1 li {
         list-style: none;
         padding: 0px 2vw;
     }
     
-    .nav li a {
+    .nav1 li a {
         box-sizing: border-box;
         background-color: transparent;
         border: 2px solid #ffffff;
         border-radius: 0.6em;
-        color: #ffffff;
+        color: #f2f0f0;
         cursor: pointer;
         display: flex;
         font-size: 1rem;
@@ -82,22 +82,21 @@
         transition: 1s;
     }
     
-    .nav li a:hover {
+    .nav1 li a:hover {
         background-color: #000000;
         outline: 0;
     }
     
-    .menu-bg {
+    .menu-bg1 {
         z-index: 1;
         width: 0;
         height: 0;
-       
         background-color: #5E6272;
         border-radius: 10px;
         transition: 1s;
     }
     
-    .menu-bg #hamburguer {
+    .menu-bg1 #hamburguer1 {
         top: 50px;
         left: 0;
         position: absolute;
@@ -107,19 +106,19 @@
         display: block;
     }
     
-    .change .line {
-        background-color: #fff;
+    .change .line1 {
+        background-color: rgb(0, 0, 0);
     }
     
-    .change #line1 {
+    .change #line11 {
         transform: translateY(11px) rotate(45deg);
     }
     
-    .change #line2 {
+    .change #line22 {
         opacity: 0;
     }
     
-    .change #line3 {
+    .change #line33 {
         transform: translateY(-5px) rotateZ(135deg);
     }
 
@@ -142,10 +141,11 @@
 
     .head {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        align-self: baseline;
     }
 
     .back2 {
@@ -162,17 +162,17 @@
     }
 
     .Hugo {
-        width: 390px;
+        width: 100vw;
         height: 210px;
     }
 
     .Givenchy {
-        width: 390px;
+        width: 100vw;
         height: 210px;
     }
 
     .Emporio {
-        width: 390px;
+        width: 100vw;
         height: 210px;
     }
 
@@ -256,10 +256,10 @@
         font-family: 'Inter';
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;
-        width: 340px;
+        width: 90vw;
         height: 66px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background-color: darkgray;
     }
 
     #boxtx1 {
@@ -300,10 +300,10 @@
         font-family: 'Inter';
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;
-        width: 340px;
+        width: 90vw;
         height: 66px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background-color: darkgray;
     }
 
     #box2:hover {
@@ -324,10 +324,10 @@
         font-family: 'Inter';
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;
-        width: 340px;
+        width: 90vw;
         height: 60px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background-color: darkgray;
     }
 
     #box3:hover {
@@ -347,10 +347,10 @@
         font-family: 'Inter';
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-weight: 900;
-        width: 340px;
+        width: 90vw;
         height: 60px;
         border-radius: 31px;
-        background-color: #E1E8EF;
+        background-color: darkgray;
     }
 
     #box4:hover {
@@ -408,42 +408,42 @@
     }
 }
 
-@media (min-width:391px) and (max-width:760px) {
+@media (min-width:426px) and (max-width:768px) {
     .Desktop{
         margin: 0;
         padding: 0;
         display: none;
     }
-    #hamburguer {
+    #hamburguer1 {
         z-index: 2;
         display: flex;
     }
     
-    #hamburguer-menu {
+    #hamburguer-menu1 {
         width: 45px;
         height: 40px;
-        margin: 30px 0 20px 20px;
+        margin: -15vw 0 20px 20px;
         cursor: pointer;
     }
     
-    .line {
+    .line1 {
         height: 8px;
-        width: 2vw;
-        background-color: #fff;
+        width: 7vw;
+        background-color: rgb(17, 17, 17);
         display: block;
         border-radius: 5px;
         transition: 1s;
     }
     
-    #line1 {
+    #line11 {
         transform: translateY(-4px);
     }
     
-    #line3 {
+    #line33 {
         transform: translateY(4px);
     }
     
-    .nav {
+    .nav1 {
         transition: 0.3s ease;
         display: none;
         background-color: darkgray;
@@ -451,23 +451,23 @@
         width: 100vw;
     }
     
-    .nav ul {
+    .nav1 ul {
         padding: 0px 50px;
-        flex-direction: row;
+        flex-direction: column;
         display: flex;
     }
     
-    .nav li {
+    .nav1 li {
         list-style: none;
         padding: 0px 2vw;
     }
     
-    .nav li a {
+    .nav1 li a {
         box-sizing: border-box;
         background-color: transparent;
         border: 2px solid #ffffff;
         border-radius: 0.6em;
-        color: #ffffff;
+        color: #f2f0f0;
         cursor: pointer;
         display: flex;
         font-size: 1rem;
@@ -483,22 +483,21 @@
         transition: 1s;
     }
     
-    .nav li a:hover {
+    .nav1 li a:hover {
         background-color: #000000;
         outline: 0;
     }
     
-    .menu-bg {
+    .menu-bg1 {
         z-index: 1;
         width: 0;
         height: 0;
-       
         background-color: #5E6272;
         border-radius: 10px;
         transition: 1s;
     }
     
-    .menu-bg #hamburguer {
+    .menu-bg1 #hamburguer1 {
         top: 50px;
         left: 0;
         position: absolute;
@@ -508,19 +507,19 @@
         display: block;
     }
     
-    .change .line {
-        background-color: #fff;
+    .change .line1 {
+        background-color: rgb(0, 0, 0);
     }
     
-    .change #line1 {
+    .change #line11 {
         transform: translateY(11px) rotate(45deg);
     }
     
-    .change #line2 {
+    .change #line22 {
         opacity: 0;
     }
     
-    .change #line3 {
+    .change #line33 {
         transform: translateY(-5px) rotateZ(135deg);
     }
     body {
@@ -599,7 +598,7 @@
         width: 100%;
         max-width: 760px;
         margin: 0px;
-        display: flex;
+        
     }
 
     @keyframes cambio {
@@ -637,17 +636,17 @@
     }
 
     .Emporio {
-        width: 760px;
+        max-width: 100vw;
         height: 400px;
     }
 
     .Givenchy {
-        width: 760px;
+        max-width: 100vw;
         height: 400px;
     }
 
     .Hugo {
-        width: 760px;
+        max-width:100vw;
         height: 400px;
     }
 
@@ -930,7 +929,7 @@
     }
     
     .change .line {
-        background-color: #fff;
+        background-color: rgb(0, 0, 0);
     }
     
     .change #line1 {
