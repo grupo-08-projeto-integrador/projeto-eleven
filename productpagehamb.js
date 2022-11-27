@@ -1,7 +1,5 @@
-function clickMenu(){
-    if(itensmenu.style.display == 'block'){
-    itensmenu.style.display = 'none';
-    } else {
-        itensmenu.style.display = 'block';
-    }
+function hamburguerOnClick() {
+    document.getElementById("hamburguer-menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
 }
