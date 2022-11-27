@@ -1,0 +1,100 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+  border: 5px solid black;
+  border-width: 5px, 5px;
+  min-height: 97vh;
+  margin: 1%; 
+  overflow-y:hidden;
+}
+.Formulario{
+  position:absolute;
+top: 95px;
+right: 160px;  
+}
+
+
+
+input[type=text]{
+  position: relative;
+  width: 300px;
+  padding: 5px ;
+  margin: 2px 0;
+  box-sizing: border-box; 
+  align-items: baseline;
+  border: 2px solid;
+  border-radius: 10px;
+  display: flex;
+  
+}
+input[type=number]{
+  position: relative;
+  width: 300px;
+  padding: 5px ;
+  margin: 2px 0;
+  box-sizing: border-box; 
+  align-items: baseline;
+  border: 2px solid;
+  border-radius: 10px;
+  display: flex;
+  
+}
+
+input[type=submit]{
+  width: 280px;
+  background: #14E442;
+  border-radius: 24px;
+}
+
+.final{
+  height: 29px;
+}
+
+#menu {
+	background: #000;
+	height: 40px;
+	margin: 0; padding: 0;
+}
+#menu ul {
+	margin: 0; padding: 0;
+	margin-left: 10px;
+	}
+
+
+#menu ul li {
+	display: inline;
+	}
+
+
+#menu ul li {
+	background: #444;
+	color: #FFF;
+	border: 1px #FFF solid;
+	border-bottom: 1px #000 solid;
+	float: left;
+	padding: 5px 7px;
+	margin: 2px;
+	text-decoration: none;
+	}
+
+  img { 
+    position: relative;
+    width: 500px;
+    top: 60px;
+    left: 100px;
+    border: 10px;
+    border-radius: 12px;
+    border-color: #000;
+  }
+  button{
+    border-color: #000;
+    border: 8px;
+    border-radius: 12px;
+  }
+  @media screen and (max-width: 375px){
+    
+  }
