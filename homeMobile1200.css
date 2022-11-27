@@ -20,7 +20,7 @@
     }
 
     .nav ul {
-        padding: 50px;
+        padding: 0 25vw;
         flex-direction: column;
         display: flex;
         align-items: center;
