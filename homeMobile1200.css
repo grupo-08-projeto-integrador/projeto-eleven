@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
 
     body {
         margin: 0px;
@@ -13,11 +13,10 @@
         height: 25px;
     }
 
-    
 
     .line {
         height: 5px;
-        width: 8vw;
+        width: 3vw;
     }
 
     .nav ul {
@@ -37,22 +36,22 @@
     }
 
     .slider {
-        padding-top: 10vh;
-        max-width: 90vw;
-        height: 48vh;
+        max-width: 100vw;
+        height: 75vh;
     }
 
     .slide img {
-        width: 100vw;
+        width: 800px;
     }
 
     .slides {
-        height: 20vh;
+        height: 70vh;
     }
 
     .manual-navigation {
-        margin-top: 25vh;
-        width: 100vw;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
     }
 
     .buscar {
@@ -62,11 +61,11 @@
     }
 
     .imgHome img {
-        width: 40vw;
+        width: 25vw;
     }
 
     .imgHome .prod {
-        height: 50vh;
+        height: 80vh;
     }
 
     .info {

@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(90deg,
-            rgb(0, 0, 0) 0%,
+            rgb(142, 142, 142) 0%,
             rgb(118, 118, 124) 35%,
             rgb(224, 231, 233) 100%);
 }
@@ -19,6 +19,7 @@ body {
     height: 3vh;
 }
 
+
 /*Menu Hamburguer*/
 #hamburguer {
     z-index: 2;
@@ -32,7 +33,7 @@ body {
 }
 
 .line {
-    height: 5px;
+    height: 8px;
     width: 2vw;
     background-color: #fff;
     display: block;
@@ -152,6 +153,7 @@ body {
     /*começa as imagens*/
     height: 16vh;
     max-width: 100vw;
+    margin-top: 5vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -216,14 +218,17 @@ body {
 
 .menu2 .img-marca:nth-of-type(2)::after {
     background-image: url(./marcas/emporio.png);
+    background-size: 150%;
 }
 
 .menu2 .img-marca:nth-of-type(3)::after {
-    background-image: url(./marcas/giorgio_armani.png);
+    background-image: url(./marcas/giorgio-logo.png);
+    background-size: 50%;
 }
 
 .menu2 .img-marca:nth-of-type(4)::after {
     background-image: url(./marcas/ArmaniEx.png);
+    background-size: 50%;
 }
 
 .ArmaniEx {
@@ -269,13 +274,13 @@ body {
 .slider {
     margin: 0 auto;
     width: 740px;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
 .slides {
     width: 400%;
-    height: 400px;
+    height: 450px;
     display: flex;
 }
 
@@ -284,19 +289,18 @@ body {
 }
 
 .slide {
-    margin-top: 1vh;
+    margin-top: 10vh;
     width: 25%;
     position: relative;
 }
 
 .slide img {
-    width: 40vw;
+    width: 800px;
 }
 
 .manual-navigation {
     position: absolute;
     width: 40vw;
-    margin-top: -8vh;
     display: flex;
     justify-content: center;
 }
@@ -330,15 +334,18 @@ body {
 }
 
 /*Fim Carrossel*/
-
+.buscar{
+    display: flex;
+    justify-content: flex-start;
+}
 input[type="text"] {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     display: flex;
     text-align: end;
-    width: 12em;
-    height: 2em;
+    width: 14em;
+    height: 3em;
     background: #e9e9e9;
     border-radius: 12px;
     border: none;

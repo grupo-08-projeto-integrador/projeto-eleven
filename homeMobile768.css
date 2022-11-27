@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
     body {
         margin: 0px;
@@ -13,11 +13,10 @@
         height: 25px;
     }
 
-    
 
     .line {
         height: 5px;
-        width: 8vw;
+        width: 5vw;
     }
 
     .nav ul {
@@ -37,9 +36,8 @@
     }
 
     .slider {
-        padding-top: 10vh;
         max-width: 90vw;
-        height: 48vh;
+        height: 71vh;
     }
 
     .slide img {
@@ -47,11 +45,10 @@
     }
 
     .slides {
-        height: 20vh;
+        height: 68vh;
     }
 
     .manual-navigation {
-        margin-top: 25vh;
         width: 100vw;
     }
 
@@ -62,7 +59,7 @@
     }
 
     .imgHome img {
-        width: 40vw;
+        width: 25vw;
     }
 
     .imgHome .prod {
