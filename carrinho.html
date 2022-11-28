@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELEVEN - Carrinho</title>
     <link rel="stylesheet" href="./carrinho.css">
-    
+
 </head>
+
 <body>
     <header class="head1"></header>
     <header class="head2"></header>
@@ -28,14 +30,13 @@
             </ul>
         </nav>
         <div class="menu-bg" id="menu-bg"></div>
-        <script src="./home2.js"></script>
     </div>
 
-    <section class="checkout"><!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
+    <section class="checkout">        <!--PÁGINA DO CHECK-OUT DOS PRODUTOS-->
         <h1 id="eleven-checkout">ELEVEN</h1>
-            <h2 id="carrinho-checkout">CARRINHO</h2>
+        <h2 id="carrinho-checkout">CARRINHO</h2>
         <div class="itens-checkout">
-            <span class="item1-checkout">
+            <span class="item1 cont-item-checkout">
                 <div class="check FGtam2"><input class="checkbox" type="checkbox" checked></div>
                 <div class="item-valor-checkout FGtam3">
                     <p id="produto-checkout">T-Shirt Armani</p>
@@ -43,23 +44,37 @@
                 </div>
                 <div class="qtde-checkout FGtam2">
                     <button id="btnmenos-checkout">-</button>
-                    <p id="qtdeitens-checkout">Qt: <input type="text" value="1" disabled id="counterValue"></p>
+                    <span id="qtdeitens-checkout">
+                        <p>Qt: </p>
+                        <input type="text" value="1" disabled id="counterValue">
+                    </span>
                     <button id="btnmais-checkout">+</button>
-                    <script scr="./carrinho.js"></script>
                 </div>
                 <button class="remover-checkout FGtam1"><img src="./imagens/clear.png" alt="clear"></button>
             </span>
         </div>
         <div class="precototal-checkout">
-            <div id="tpt-checkout"><p>TOTAL: R$ 450,00</p></div>
+            <div id="tpt-checkout">
+                <p>TOTAL: R$ 450,00</p>
+            </div>
         </div>
         <div class="divbtnpf-checkout">
-            <button class="btnFP-checkout">FINALIZAR PEDIDO</button>
-            <p id="aviso">Ao clicar no botão acima, 
+            <div id="btnFP">
+                <button class="btnFP-checkout">FINALIZAR PEDIDO</button>
+                <p id="aviso">Ao clicar no botão acima, 
                 você será redirecionado(a) para nosso WhatsApp e 
                 nosso atendimento finalizará o seu pedido</p>
+            </div>
+            <div>
+                <button class="btnFP-checkout">REALIZAR CADASTRO</button>
+                <p id="aviso">Ainda não possui cadastro? 
+                    Cadastre em nossa Loja Virtual.</p>
+            </div>
         </div>
-    
     </section>
+    <script src="./home2.js"></script>
+    <script src="./contador.js"></script>
+
 </body>
+
 </html>
