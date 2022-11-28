@@ -1,6 +1,8 @@
-/* MOBILE == 425 PX
+/* 
+MOBILE == 425 PX
 TABLET == 768PX
-DESKTOP == 1200PX*/
+DESKTOP == 1200PX
+*/
 html{
     width: 100vw;
 }
@@ -13,38 +15,22 @@ body{
             rgb(118, 118, 124) 35%,
             rgb(224, 231, 233) 100%);
 }
-/*      Mobile      */
-@media (max-width:425px) { 
-.productPage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#faixa1{
-    display: none;
-}
-#faixa2{
-    display: flex;
-    width: 100vw;
-    height: 2vh;
-    background-color: #757575;;
-}
 /*Menu Hamburguer*/
 #hamburguer {
     z-index: 2;
+    display: flex;
 }
 
 #hamburguer-menu {
-    width: 60px;
-    height: 0px;
-    margin: 30px 0px 10px 20px;
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;
 }
 
 .line {
-    height: 1vh;
-    width: 6vw;
+    height: 8px;
+    width: 2vw;
     background-color: #fff;
     display: block;
     border-radius: 5px;
@@ -54,6 +40,7 @@ body{
 #line1 {
     transform: translateY(-4px);
 }
+
 #line3 {
     transform: translateY(4px);
 }
@@ -61,21 +48,20 @@ body{
 .nav {
     transition: 0.3s ease;
     display: none;
+    background-color: darkgray;
+    border-radius: 25px;
+    width: 100vw;
 }
 
 .nav ul {
-    margin: 0px;
-    padding: 0px;
+    padding: 0px 50px;
     flex-direction: row;
     display: flex;
-    max-width: 100vw;
 }
 
 .nav li {
     list-style: none;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    padding: 0px 2vw;
 }
 
 .nav li a {
@@ -86,18 +72,18 @@ body{
     color: #ffffff;
     cursor: pointer;
     display: flex;
-    font-size: 8px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1;
-    margin: 3px;
-    padding: 10px;
+    margin: 0px;
+    padding: 1em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     transition: 1s;
-    width: 15vw;
+    
 }
 
 .nav li a:hover {
@@ -109,7 +95,7 @@ body{
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+   
     background-color: #5E6272;
     border-radius: 10px;
     transition: 1s;
@@ -130,7 +116,7 @@ body{
 }
 
 .change #line1 {
-    transform: translateX(4px) rotate(-45deg);
+    transform: translateY(11px) rotate(45deg);
 }
 
 .change #line2 {
@@ -138,11 +124,75 @@ body{
 }
 
 .change #line3 {
-    transform: translateX(6px) rotateZ(45deg);
+    transform: translateY(-5px) rotateZ(135deg);
 }
 
 /*Menu hamburguer fim*/
 
+/*      Mobile      */
+@media (max-width:425px) { 
+.productPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#faixa1{
+    display: none;
+}
+#faixa2{
+    display: flex;
+    width: 100vw;
+    height: 2vh;
+    background-color: #757575;;
+}
+#hamburguer {
+    display: flex;
+}
+
+#hamburguer-menu {
+    height: 25px;
+}
+
+.change #line1 {
+    transform: translateY(5.5px) rotate(45deg);
+}
+
+.change #line2 {
+    opacity: 0;
+}
+
+.change #line3 {
+    transform: translateY(-5px) rotateZ(135deg);
+}
+
+
+.line {
+    height: 5px;
+    width: 8vw;
+}
+
+.nav ul {
+    padding: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.nav li a {
+    box-sizing: none;
+    border: none;
+}
+#divzap{
+    width: 12vw;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+#imgzap{
+    width: 100%;
+    background-color: transparent;
+}
 #topbar{
     display: flex;
     width: 100vw;
@@ -349,19 +399,22 @@ input.input{
     opacity: 1;
 }
 
+.info h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .info {
     text-align: center;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     font-family: 'Inter';
     font-style: light;
     font-weight: 100;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
-    gap: 2px;
+    gap: 5px;
 }
 
 
@@ -404,105 +457,8 @@ input.input{
     height: 4vh;
     background-color: #757575;;
 }
-/*Menu Hamburguer*/
-#hamburguer {
-    z-index: 2;
-    max-width: 100vw;
-}
-
-#hamburguer-menu {
-    width: 60px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-}
-
-.line {
-    height: 1vh;
-    width: 3vw;
-    background-color: #fff;
-    display: block;
-    border-radius: 5px;
-    transition: 1s;
-}
-
-#line1 {
-    transform: translateY(-4px);
-}
-#line3 {
-    transform: translateY(4px);
-}
-
-.nav {
-    transition: 0.3s ease;
-    display: none;
-}
-
-.nav ul {
-    padding: 0 50px;
-    flex-direction: row;
-    display: flex;
-    max-width: 100vw;
-    justify-content: space-around;
-}
-
-.nav li {
-    list-style: none;
-    padding: 0px;
-}
-
-.nav li a {
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 0.6em;
-    color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 0px;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    transition: 1s;
-}
-
-.nav li a:hover {
-    background-color: #000000;
-    outline: 0;
-}
-
-.menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background-color: #5E6272;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.menu-bg #hamburguer {
-    top: 50px;
-    left: 0;
-    position: absolute;
-}
-
-.change {
-    display: block;
-}
-
-.change .line {
-    background-color: #fff;
-}
-
 .change #line1 {
-    transform: translateX(4px) rotate(-45deg);
+    transform: translateY(5.4px) rotate(45deg);
 }
 
 .change #line2 {
@@ -510,10 +466,56 @@ input.input{
 }
 
 .change #line3 {
-    transform: translateX(6px) rotateZ(45deg);
+    transform: translateY(-5px) rotateZ(135deg);
 }
 
-/*Menu hamburguer fim*/
+.change #line1 {
+    transform: translateY(5.4px) rotate(45deg);
+}
+
+.change #line2 {
+    opacity: 0;
+}
+
+.change #line3 {
+    transform: translateY(-5px) rotateZ(135deg);
+}
+
+#hamburguer {
+    display: flex;
+}
+
+#hamburguer-menu {
+    height: 25px;
+}
+
+
+.line {
+    height: 5px;
+    width: 5vw;
+}
+
+.nav ul {
+    padding: 0 25vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.nav li a {
+    box-sizing: none;
+    border: none;
+}
+#divzap{
+    width: 6.4vw;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+#imgzap{
+    width: 100%;
+    background-color: transparent;
+}
 #topbar{
     display: flex;
     width: 100vw;
@@ -716,21 +718,23 @@ input.input{
     opacity: 1;
 }
 
+.info h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .info {
-    display: flex;
     text-align: center;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
+    display: flex;
     flex-direction: column;
     font-family: 'Inter';
     font-style: light;
     font-weight: 100;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
     gap: 5px;
 }
-
 
 .botaoCompra {
     width: 8vw;
@@ -765,7 +769,6 @@ input.input{
     flex-direction: column;
     width: 100vw;
 }
-
 #faixa1{
     width: 100vw;
     height: 4vh;
@@ -776,104 +779,26 @@ input.input{
     height: 4vh;
     background-color: #C9C2C2;
 }
-
-/*Menu Hamburguer*/
+#divzap{
+    width: 3.4vw;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+#imgzap{
+    width: 100%;
+    background-color: transparent;
+}
 #hamburguer {
-    z-index: 2;
-    max-width: 100vw;
+    display: flex;
 }
 
 #hamburguer-menu {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-}
-
-.line {
-    height: 8px;
-    width: 3vw;
-    background-color: #fff;
-    display: block;
-    border-radius: 5px;
-    transition: 1s;
-}
-
-#line1 {
-    transform: translateY(-4px);
-}
-#line3 {
-    transform: translateY(4px);
-}
-
-.nav {
-    transition: 0.3s ease;
-    display: none;
-}
-
-.nav ul {
-    padding: 0 10px;
-    flex-direction: row;
-    display: flex;
-}
-
-.nav li {
-    list-style: none;
-    padding: 0px 4vw;
-}
-
-.nav li a {
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 0.6em;
-    color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 0px;
-    padding: 1em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    transition: 1s;
-}
-
-.nav li a:hover {
-    background-color: #000000;
-    outline: 0;
-}
-
-.menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background-color: #5E6272;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.menu-bg #hamburguer {
-    top: 50px;
-    left: 0;
-    position: absolute;
-}
-
-.change {
-    display: block;
-}
-
-.change .line {
-    background-color: #fff;
+    height: 25px;
 }
 
 .change #line1 {
-    transform: translateX(4px) rotate(-45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .change #line2 {
@@ -881,10 +806,24 @@ input.input{
 }
 
 .change #line3 {
-    transform: translateX(6px) rotateZ(45deg);
+    transform: translateY(-5px) rotateZ(135deg);
 }
 
-/*Menu hamburguer fim*/
+.line {
+    height: 5px;
+    width: 2vw;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40vw;
+}
+
+.nav li a {
+    box-sizing: none;
+}
 
 #topbar{
     display: flex;
@@ -1056,10 +995,15 @@ input.input{
     align-items: center;
     position: relative;
     width: 20vw;
-    height: 80vh;
-    margin: 20px;
+    height: 60vh;
+    margin: 0px;
     padding: 20px;
     border-radius: 20px;
+}
+
+.info h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .imgHome .prod:hover {
@@ -1075,7 +1019,7 @@ input.input{
 }
 
 .imgHome .prod .info {
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     transform: translateY(-150px);
     opacity: 0;
@@ -1090,14 +1034,13 @@ input.input{
 .info {
     text-align: center;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     font-family: 'Inter';
     font-style: light;
     font-weight: 100;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
     gap: 5px;
 }
@@ -1112,7 +1055,7 @@ input.input{
     align-items: center;
     justify-content: center;
     color: black;
-    font-family: Arial;
+    font-family: 'Arial';
     font-size: 15px;
     font-weight: bold;
     padding: 6px 24px;
