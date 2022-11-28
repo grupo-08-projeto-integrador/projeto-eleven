@@ -1,100 +1,226 @@
-* { 
+body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(90deg,
+            rgb(142, 142, 142) 0%,
+            rgb(118, 118, 124) 35%,
+            rgb(224, 231, 233) 100%);
+}
+.faixa1{
+  display: flex;
+  width: 100vw;
+  height: 4vh;
+  background-color: #312E2E;
+}
+.faixa2{
+  display: flex;
+  width: 100vw;
+  height: 4vh;
+  background-color: #C9C2C2;
+}
+#hamburguer {
+  z-index: 2;
+  display: flex;
+}
+
+#hamburguer-menu {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.line {
+  height: 8px;
+  width: 2vw;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+#line1 {
+  transform: translateY(-4px);
+}
+
+#line3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+  background-color: darkgray;
+  border-radius: 25px;
+  width: 100vw;
+}
+
+.nav ul {
+  padding: 0px 50px;
+  flex-direction: row;
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  padding: 0px 2vw;
+}
+
+.nav li a {
   box-sizing: border-box;
-}
-body{
-  background-color: white;
-  border: 5px solid black;
-  border-width: 5px, 5px;
-  min-height: 97vh;
-  margin: 1%; 
-  overflow-y:hidden;
-}
-.Formulario{
-  position:absolute;
-top: 95px;
-right: 160px;  
-}
-
-
-
-input[type=text]{
-  position: relative;
-  width: 300px;
-  padding: 5px ;
-  margin: 2px 0;
-  box-sizing: border-box; 
-  align-items: baseline;
-  border: 2px solid;
-  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 0.6em;
+  color: #ffffff;
+  cursor: pointer;
   display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0px;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.nav li a:hover {
+  background-color: #000000;
+  outline: 0;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+
+  background-color: #5E6272;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.menu-bg #hamburguer {
+  top: 50px;
+  left: 0;
+  position: absolute;
+}
+
+.change {
+  display: block;
+}
+
+.change .line {
+  background-color: rgb(0, 0, 0);
+}
+
+.change #line1 {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.change #line2 {
+  opacity: 0;
+}
+
+.change #line3 {
+  transform: translateY(-5px) rotateZ(135deg);
+}
+
+.geral {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5vw;
+}
+
+.imgloja {
+  display: flex;
+  margin-right: 20vw;
+  font-size: 90px;
+  font-family: sans-serif;
+  font-weight: 1000;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 27vw;
+  height: 29vw;
+}
+
+#dadosfont {
+  color: #ffffff;
+  height: 5vh;
+  font-size: 12px;
+  font-weight: 900;
+  font-family: 'Alegria Sans SC';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.Formulario input {
+  height: 5vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  font-family: 'Alegria Sans SC';
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.Formulario label {
+  display: flex;
+  justify-content: center;
+}
+
+.dados {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(153, 153, 153);
+  border-radius: 14px;
+}
+
+#Endereço {
+  height: 5vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  font-family: 'Alegria Sans SC';
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.cadastrarA {
+  border: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
   
 }
-input[type=number]{
-  position: relative;
-  width: 300px;
-  padding: 5px ;
-  margin: 2px 0;
-  box-sizing: border-box; 
-  align-items: baseline;
-  border: 2px solid;
-  border-radius: 10px;
+#cadastrarB {
+  border: none;
   display: flex;
-  
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'Inter';
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  width: 27vw;
+  height: 5vh;
+  border-radius: 31px;
+  background: #312E2E;
+  color: #ffffff;
 }
-
-input[type=submit]{
-  width: 280px;
-  background: #14E442;
-  border-radius: 24px;
-}
-
-.final{
-  height: 29px;
-}
-
-#menu {
-	background: #000;
-	height: 40px;
-	margin: 0; padding: 0;
-}
-#menu ul {
-	margin: 0; padding: 0;
-	margin-left: 10px;
-	}
-
-
-#menu ul li {
-	display: inline;
-	}
-
-
-#menu ul li {
-	background: #444;
-	color: #FFF;
-	border: 1px #FFF solid;
-	border-bottom: 1px #000 solid;
-	float: left;
-	padding: 5px 7px;
-	margin: 2px;
-	text-decoration: none;
-	}
-
-  img { 
-    position: relative;
-    width: 500px;
-    top: 60px;
-    left: 100px;
-    border: 10px;
-    border-radius: 12px;
-    border-color: #000;
-  }
-  button{
-    border-color: #000;
-    border: 8px;
-    border-radius: 12px;
-  }
-  @media screen and (max-width: 375px){
-    
-  }

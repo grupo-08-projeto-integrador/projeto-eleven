@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css"/>
-    <meta charset="utf-8">
-    <title>ELEVEN CADASTRO DE USUARIO</title>
-    <link rel="icon" type="image/x-icon" href="eleven.jpg"> <!-- Colocar favicon aqui -->
-  </head>
-  <body>
-    
-    <div id="menu">
-      <ul>
-        <li>link1</li>
-        <li>link2</li>
-        <li>link3</li>
-        <li>link4</li>
-      </ul>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>ELEVEN CADASTRO DE USUARIO</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="eleven.jpg"> <!-- Colocar favicon aqui -->
+</head>
+
+<body>
+  <div class="faixa1"></div>
+  <div class="faixa2"></div>
+  <div id="hamburguer">
+    <div id="hamburguer-menu" onclick="hamburguerOnClick()">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
     </div>
-    <img src="eleven.jpg" alt="eleven">
-   <div>
-    <form class="Formulario">
-      <center><h3>Entrega</h3></center>
-      <label class="Contain"> Cidade: <input name="nome" type="text" placeholder="Nome" required> </label>
-      <p></p>
-      <center><h3>Suas Informações</h3></center>
-      <p></p>
-      <label class="email">CEP</label>
-      <input name="email" type="text" placeholder="CEP" required>
-      <p></p>
-      <div class="sideside">
-        <label class="Numero">Número</label>
-        <input name="num" type="text" placeholder="Numero" required>
-        <label class="Estado">Estado</label>
-        <Input name="est" type="text" placeholder="Estado" required></Input>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Camisetas</a></li>
+        <li><a href="#">Calças</a></li>
+        <li><a href="#">Tênis</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+  </div>
+  <script src="loginJS.js"></script>
+  <div class="geral">
+    <div class="imgloja">ELEVEN</div>
+        <form class="Formulario">
+          <div class="dados"><span id="dadosfont">DADOS</span></div>
+          <label>Entrega</label>
+          <select id="Endereço" name="Endereço" aria-placeholder="Endereço">
+            <option value="au">bla</option>
+            <option value="ca">bla</option>
+            <option value="usa">bla</option>
+          </select>     
+          <label>Suas Informações</label>    
+          <input name="CEP" type="text" placeholder="CEP*" required>
+          <div class="sideaside">        
+          <input name="Telefone" type="text" placeholder="Telefone*" required>          
+          <input name="Cidade" type="text" placeholder="Cidade*" required>
+          </div>       
+          <input name="Endereço" type="text" placeholder="Rua/Numero/Complemento*" required>
+          <input name="Nome" type="text" placeholder="Nome*" required>
+          <a class="cadastrarA" href=""><button id="cadastrarB">Cadastrar</button></a>
+        </form>
       </div>
-      <label class="Endereco"> Endereço: <input name="Endereco" type="text" placeholder="Endereco" required> </label>
-      <p></p>
-      <label class="complemento">Complemento</label>
-      <input name="comp" type="text" placeholder="Complemento" required>
-      <label class="nome">Nome</label>
-      <input name="name" type="text" placeholder="Nome Completo" required>
-      <label class="telefone">Telefone</label>
-      <input name="tel" type="text" placeholder="(xx) xxxxxxxxx" required>
-      <label class="observacao">Observação</label>
-      <input class="obs" type="text" placeholder="OBS">
-      <center><button class="final"><input type="submit" name="action" value="Finalizar no WhatsApp"></button></center>
-    </form>
-   </div>
-  </body>
+    </div>
+    </body>
+
+
 </html>
