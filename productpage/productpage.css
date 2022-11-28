@@ -349,19 +349,22 @@ input.input{
     opacity: 1;
 }
 
+.info h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .info {
     text-align: center;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     font-family: 'Inter';
     font-style: light;
     font-weight: 100;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
-    gap: 2px;
+    gap: 5px;
 }
 
 
@@ -716,17 +719,20 @@ input.input{
     opacity: 1;
 }
 
+.info h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 .info {
-    display: flex;
     text-align: center;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
+    display: flex;
     flex-direction: column;
     font-family: 'Inter';
     font-style: light;
     font-weight: 100;
     font-size: 14px;
-    line-height: 24px;
     color: #000000;
     gap: 5px;
 }
