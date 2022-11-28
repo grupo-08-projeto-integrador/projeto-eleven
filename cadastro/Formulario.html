@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>ELEVEN CADASTRO DE USUARIO</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+  <link rel="icon" type="image/x-icon" href="eleven.jpg"> <!-- Colocar favicon aqui -->
+</head>
+
+<body>
+  <div class="faixa1"></div>
+  <div class="faixa2"></div>
+  <div id="hamburguer">
+    <div id="hamburguer-menu" onclick="hamburguerOnClick()">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../carrinho/carrinho.html">Carrinho</a></li>
+        <li><a href="../contatos/index.html">Contato</a></li>
+        <li><a href="../login/Formulario.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+  </div>
+  <script src="loginJS.js"></script>
+  <div class="geral">
+    <div class="imgloja">ELEVEN</div>
+        <form class="Formulario">
+          <div class="dados"><span id="dadosfont">DADOS</span></div>
+          <label>Entrega</label>
+          <select id="Endereço" name="Endereço" aria-placeholder="Endereço">
+            <option value="au">bla</option>
+            <option value="ca">bla</option>
+            <option value="usa">bla</option>
+          </select>     
+          <label>Suas Informações</label>    
+          <input name="CEP" type="text" placeholder="CEP*" required>
+          <div id="sideaside">        
+          <input name="Telefone" type="text" placeholder="Telefone*" required>          
+          <input name="Cidade" type="text" placeholder="Cidade*" required>
+          </div>       
+          <input name="Endereço" type="text" placeholder="Rua/Numero/Complemento*" required>
+          <input name="Nome" type="text" placeholder="Nome*" required>
+          <a class="cadastrarA" href=""><button id="cadastrarB">Cadastrar</button></a>
+        </form>
+      </div>
+    </div>
+    </body>
+
+
+</html>

@@ -1,0 +1,788 @@
+@media (max-width:425px) {
+  body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,
+        rgb(142, 142, 142) 0%,
+        rgb(118, 118, 124) 35%,
+        rgb(224, 231, 233) 100%);
+  }
+
+  .faixa1 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #312E2E;
+  }
+
+  .faixa2 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #C9C2C2;
+  }
+
+  #hamburguer {
+    z-index: 2;
+    display: flex;
+  }
+
+  #hamburguer-menu {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .line {
+    height: 8px;
+    width: 6vw;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 5px;
+    transition: 1s;
+  }
+
+  #line1 {
+    transform: translateY(-4px);
+  }
+
+  #line3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    background-color: darkgray;
+    border-radius: 25px;
+    width: 100vw;
+  }
+
+  .nav ul {
+    gap: 2vw;
+    padding-top: 1vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-inline-start: 10px;
+  }
+
+  .nav li {
+    list-style: none;
+  }
+
+  .nav li a {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 2.5vw;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0px;
+    width: 30vw;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 1s;
+  }
+
+  .nav li a:hover {
+    background-color: #000000;
+    outline: 0;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+
+    background-color: #5E6272;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .menu-bg #hamburguer {
+    top: 50px;
+    left: 0;
+    position: absolute;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .line {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .change #line1 {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .change #line2 {
+    opacity: 0;
+  }
+
+  .change #line3 {
+    transform: translateY(-5px) rotateZ(135deg);
+  }
+
+  .geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5vw;
+  }
+
+  .imgloja {
+    display: flex;
+    align-self: center;
+    font-size: 20vw;
+    font-family: sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  .Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  #dadosfont {
+    color: #ffffff;
+    height: 5vh;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Alegria Sans SC';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .Formulario input {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .Formulario label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dados {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(153, 153, 153);
+    border-radius: 14px;
+  }
+
+  #Endereço {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  #sideaside{
+    display: flex;
+    justify-content: row;
+  }
+  #sideaside input{
+    height: 5vh;
+    width: 49vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .cadastrarA {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Inter';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    
+    height: 5vh;
+    border-radius: 31px;
+    background: #312E2E;
+    color: #ffffff;
+  }
+
+  #cadastrarB {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Inter';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    
+    height: 5vh;
+    border-radius: 31px;
+    background: #312E2E;
+    color: #ffffff;
+  }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+  body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,
+        rgb(142, 142, 142) 0%,
+        rgb(118, 118, 124) 35%,
+        rgb(224, 231, 233) 100%);
+  }
+
+  .faixa1 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #312E2E;
+  }
+
+  .faixa2 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #C9C2C2;
+  }
+
+  #hamburguer {
+    z-index: 2;
+    display: flex;
+  }
+
+  #hamburguer-menu {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .line {
+    height: 8px;
+    width: 6vw;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 5px;
+    transition: 1s;
+  }
+
+  #line1 {
+    transform: translateY(-4px);
+  }
+
+  #line3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    background-color: darkgray;
+    border-radius: 25px;
+    width: 100vw;
+  }
+
+  .nav ul {
+    gap: 2vw;
+    padding-top: 1vw;
+    flex-direction: row;
+    display: flex;
+    padding-inline-start: 10px;
+  }
+
+  .nav li {
+    list-style: none;
+  }
+
+  .nav li a {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0px;
+    width: 10vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 1s;
+  }
+
+  .nav li a:hover {
+    background-color: #000000;
+    outline: 0;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+
+    background-color: #5E6272;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .menu-bg #hamburguer {
+    top: 50px;
+    left: 0;
+    position: absolute;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .line {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .change #line1 {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .change #line2 {
+    opacity: 0;
+  }
+
+  .change #line3 {
+    transform: translateY(-5px) rotateZ(135deg);
+  }
+
+  .geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5vw;
+  }
+
+  .imgloja {
+    display: flex;
+    align-self: center;
+    font-size: 90px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  .Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #dadosfont {
+    color: #ffffff;
+    height: 5vh;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Alegria Sans SC';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .Formulario input {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .Formulario label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dados {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(153, 153, 153);
+    border-radius: 14px;
+  }
+
+  #Endereço {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  #sideaside{
+    display: flex;
+    justify-content: row;
+  }
+  #sideaside input{
+    height: 5vh;
+    width: 27.5vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .cadastrarA {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Inter';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    
+    height: 5vh;
+    border-radius: 31px;
+    background: #312E2E;
+    color: #ffffff;
+  }
+
+  #cadastrarB {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Inter';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    
+    height: 5vh;
+    border-radius: 31px;
+    background: #312E2E;
+    color: #ffffff;
+  }
+}
+
+@media (min-width:768px) {
+  body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,
+        rgb(142, 142, 142) 0%,
+        rgb(118, 118, 124) 35%,
+        rgb(224, 231, 233) 100%);
+  }
+
+  .faixa1 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #312E2E;
+  }
+
+  .faixa2 {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #C9C2C2;
+  }
+
+  #hamburguer {
+    z-index: 2;
+    display: flex;
+  }
+
+  #hamburguer-menu {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .line {
+    height: 8px;
+    width: 3vw;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 5px;
+    transition: 1s;
+  }
+
+  #line1 {
+    transform: translateY(-4px);
+  }
+
+  #line3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    background-color: darkgray;
+    border-radius: 25px;
+    width: 100vw;
+  }
+
+  .nav ul {
+    gap: 2vw;
+    padding-top: 1vw;
+    flex-direction: row;
+    display: flex;
+    padding-inline-start: 10px;
+  }
+
+  .nav li {
+    list-style: none;
+  }
+
+  .nav li a {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0px;
+    width: 10vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 1s;
+  }
+
+  .nav li a:hover {
+    background-color: #000000;
+    outline: 0;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+
+    background-color: #5E6272;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .menu-bg #hamburguer {
+    top: 50px;
+    left: 0;
+    position: absolute;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .line {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .change #line1 {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .change #line2 {
+    opacity: 0;
+  }
+
+  .change #line3 {
+    transform: translateY(-5px) rotateZ(135deg);
+  }
+
+  .geral {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5vw;
+  }
+
+  .imgloja {
+    display: flex;
+    align-self: center;
+    margin-right: 20vw;
+    font-size: 90px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  .Formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 27vw;
+    
+  }
+
+  #dadosfont {
+    color: #ffffff;
+    height: 5vh;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Alegria Sans SC';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .Formulario input {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .Formulario label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dados {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(153, 153, 153);
+    border-radius: 14px;
+  }
+
+  #Endereço {
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  #sideaside{
+    display: flex;
+    justify-content: row;
+  }
+  #sideaside input{
+    height: 5vh;
+    width: 13.5vw;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+    font-family: 'Alegria Sans SC';
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .cadastrarA {
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+
+  #cadastrarB {
+    border: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Inter';
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    width: 27vw;
+    height: 5vh;
+    border-radius: 31px;
+    background: #312E2E;
+    color: #ffffff;
+  }
+}
