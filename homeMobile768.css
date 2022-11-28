@@ -104,7 +104,11 @@
         transform: none;
         opacity: 1;
     }
-
+    .filter{
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
     
 
 }
