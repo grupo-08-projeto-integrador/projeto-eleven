@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="eleven.jpg"> <!-- Colocar favicon aqui -->
+    <title>Pagina De Administração</title>
+</head>
+<body>
+    <div class="faixa1"></div>
+  <div class="faixa2"></div>
+  <div class="geral">
+  <div id="hamburguer">
+    <div id="hamburguer-menu" onclick="hamburguerOnClick()">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cadastro</a></li>
+      </ul>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+  </div>
+    <form class="CadastroProduto">
+        <label>Tipo De Produto</label>
+        <select name="Produto" id="TipoProd" required >
+            <option value="" disabled selected>Selecione o Produto</option>
+            <option value="Camiseta">Camiseta</option>
+            <option value="Tênis">Calça</option>
+            <option value="Calça">Tênis</option>
+        </select>
+        <label>Marca</label>
+        <select name="Produto" id="TipoProd" required >
+            <option value="" disabled selected>Selecione a Marca</option>
+            <option value="ARMANI">ARMANI</option>
+            <option value="HUGO BOSS">HUGO BOSS</option>
+            <option value="PRADA">PRADA</option>
+            <option value="DOLCE&GABBANA">DOLCE&GABBANA</option>
+            <option value="GIVENCHY">GIVENCHY</option>
+            <option value="DIESEL">DIESEL</option>
+            <option value="BURBERRY">BURBERRY</option>
+            <option value="VERSACE">VERSACE</option>
+        </select>
+        <label>Tamanhos</label>
+        <select name="Tamanhos" id="prodtamanhos" required>
+            <option value="" disabled selected>Selecione o Tamanho</option>
+            <option value="P">S</option>
+            <option value="M">M</option>
+            <option value="G">L</option>
+            <option value="GG">XL</option>
+            <option value="GGG">XXL</option>
+        </select>
+        <label>Cores</label>
+        <select name="Cores" id="corprod" required>
+            <option value="" disabled selected>Selecione a Cor</option>
+            <option value="Preto">Preto</option>
+            <option value="Branca">Branco</option>
+            <option value="Azul">Azul</option>
+            <option value="Cinza">Cinza</option>
+            <option value="Verde">Verde</option>
+            <option value="Vermelha">Vermelha</option>
+        </select>
+        <label>Informações do Produto</label>
+        <input type="number" min="0.00" max="10000.00" step="50.99" placeholder="Valor" required/>
+        <input type="text" name="Nome" placeholder="Nome do Produto" required>
+    </form>
+  </div>
+<script src="Adm.JS"></script>
+</body>
+</html>
