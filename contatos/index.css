@@ -873,8 +873,8 @@
       }
     
       .line {
-        height: 8px;
-        width: 3vw;
+        height: 5px;
+        width: 2vw;
         background-color: rgb(255, 255, 255);
         display: block;
         border-radius: 5px;
@@ -895,6 +895,7 @@
         background-color: darkgray;
         border-radius: 25px;
         width: 100vw;
+        margin: 10px;
       }
     
       .nav ul {
@@ -917,14 +918,16 @@
         color: #ffffff;
         cursor: pointer;
         display: flex;
-        font-size: 1.5vw;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1;
         margin: 0px;
-        width: 10vw;
-        height: 7vh;
+        width: 8vw;
+        height: 6vh;
         justify-content: center;
         align-items: center;
+        position: relative;
+        left: 2vw;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;

@@ -447,6 +447,7 @@ h3 {
     transform: translateY(150px);
     opacity: 0;
     transition: 0.5s;
+    padding-top: 70px;
 }
 
 .imgHome .prod:hover .info {
