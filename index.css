@@ -625,6 +625,10 @@
       }
       .CadastroProduto select{
         height: 5vh;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        margin-inline-end: 0;
+        margin-inline-start: 0;
         box-sizing: border-box;
         border-radius: 10px;
         border: 2px solid lightgrey;

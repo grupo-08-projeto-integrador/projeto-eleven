@@ -23,13 +23,20 @@
     <nav class="nav" id="nav">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="./editar.html">Editar</a></li>
+        <li><a href="./index.html">Cadastrar</a></li>
         <li><a href="./excluir.html">Excluir</a></li>
       </ul>
     </nav>
     <div class="menu-bg" id="menu-bg"></div>
   </div>
     <form class="CadastroProduto">
+        <Label>EDITAR PRODUTO</Label>
+        <select name="ID PROD" id="IDProd" required >
+            <option value="" disabled selected>Selecione a ID</option>
+            <option value="Camiseta">001</option>
+            <option value="Tênis">002</option>
+            <option value="Calça">003</option>
+        </select>
         <label>Tipo De Produto</label>
         <select name="Produto" id="TipoProd" required >
             <option value="" disabled selected>Selecione o Produto</option>
@@ -72,7 +79,7 @@
         <input type="number" min="0.00" max="10000.00" step="50.99" placeholder="Valor" required/>
         <input type="text" name="Nome" placeholder="Nome do Produto" required>
         <div class="butom">
-        <a class="cadastrarA" href=""><button id="cadastrarB">Cadastrar Produto</button></a>
+        <a class="cadastrarA" href=""><button id="cadastrarB">Editar</button></a>
     </div>
     </form>
   </div>
