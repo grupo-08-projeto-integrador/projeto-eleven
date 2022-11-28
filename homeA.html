@@ -81,11 +81,14 @@
             </script>
         </div>
 
-        <div class="buscar">
-            <input type="text" placeholder="O que você Procura?" />
-        </div>
         
         <div class="imagens">
+            <ul class="filter">
+                <li class="item active" data-filter="todos">Todos</li>
+                <li class="item" data-filter="camiseta">Camisetas</li>
+                <li class="item" data-filter="calca">Calças</li>
+                <li class="item" data-filter="tenis">Tênis</li>
+            </ul>
             <div class="imgHome">
                 <div class="prod">  
                     <img class="produtos" src="./camisetas/camiseta.JPG" alt="camiseta">
@@ -151,6 +154,9 @@
                         <a href="productpage\productARMANIpreta.html" class="botaoCompra">COMPRAR</a>
                     </div>
                 </div>
+                <script src="https://code.jquery.com/jquery-3.6.1.js"
+                    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+                <script src="./filtroHome.js"></script>
                 <script type="text/javascript" media="min-width = 480px" src="./vanilla-tilt.js"></script>
                 <script>VanillaTilt.init(document.querySelectorAll(".prod"), {
                         max: 25,
