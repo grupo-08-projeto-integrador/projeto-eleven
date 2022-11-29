@@ -6,7 +6,16 @@ body {
             rgb(118, 118, 124) 35%,
             rgb(224, 231, 233) 100%);
 }
-
+#divzap{
+    width: 3.4vw;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+#imgzap{
+    width: 100%;
+    background-color: transparent;
+}
 .head1 {
     background-color: #000000;
     display: flex;

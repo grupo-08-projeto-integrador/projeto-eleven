@@ -4,7 +4,16 @@
         margin: 0px;
         padding: 0px;
     }
-
+    #divzap{
+        width: 3.4vw;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+    #imgzap{
+        width: 100%;
+        background-color: transparent;
+    }
     #hamburguer {
         display: flex;
     }
