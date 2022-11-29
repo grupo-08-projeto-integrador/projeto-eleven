@@ -355,7 +355,6 @@ input.input{
 
 .imagens {
     display: flex;
-    overflow: hidden;
     padding-top: 20px;
 }
 
@@ -374,10 +373,6 @@ input.input{
     width: 34vw;
 }
 
-.imgHome .prod:hover {
-    border-bottom: none;
-}
-
 .imgHome img {
     width: 40vw;
 }
@@ -389,17 +384,12 @@ input.input{
 .imgHome .prod .info {
     padding: 20px;
     text-align: center;
-    transform: translateY(-150px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.imgHome .prod:hover .info {
-    transform: translateY(0px);
     opacity: 1;
 }
 
 .info h3{
+    width: 100%;
+    font-size: 10px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -692,11 +682,6 @@ input.input{
     padding: 20px 20px 40px 40px; 
     border-radius: 20px;
 }
-
-.imgHome .prod:hover {
-    border-bottom: none;
-}
-
 .imgHome img {
     width: 100%;
 }
@@ -708,13 +693,6 @@ input.input{
 .imgHome .prod .info {
     padding: 20px;
     text-align: center;
-    transform: translateY(-150px);
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.imgHome .prod:hover .info {
-    transform: translateY(0px);
     opacity: 1;
 }
 
